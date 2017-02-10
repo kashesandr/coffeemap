@@ -1,0 +1,39 @@
+{
+  "name": "coffeemap",
+  "version": "1.0.0",
+  "description": "An interactive world-map with points where different types of coffee grow Edit",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "npm test",
+    "build": "node ./node_modules/.bin/webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kashesandr/coffeemap.git"
+  },
+  "keywords": [
+    "coffee",
+    "map",
+    "world",
+    "d3",
+    "javascript",
+    "webpack"
+  ],
+  "author": "Alexander Kasheverov (kashesandr)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/kashesandr/coffeemap/issues"
+  },
+  "homepage": "https://github.com/kashesandr/coffeemap#readme",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  },
+  "dependencies": {
+    "leaflet": "^1.0.3"
+  }
+}
