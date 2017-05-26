@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 234);
+/******/ 	return __webpack_require__(__webpack_require__.s = 235);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -699,10 +699,10 @@ if (typeof __DEV__ === 'undefined') {
 
     var env = __webpack_require__(15);
 
-    var GlobalModel = __webpack_require__(553);
-    var ExtensionAPI = __webpack_require__(330);
+    var GlobalModel = __webpack_require__(556);
+    var ExtensionAPI = __webpack_require__(333);
     var CoordinateSystemManager = __webpack_require__(30);
-    var OptionManager = __webpack_require__(554);
+    var OptionManager = __webpack_require__(557);
 
     var ComponentModel = __webpack_require__(14);
     var SeriesModel = __webpack_require__(17);
@@ -2590,9 +2590,9 @@ if (typeof __DEV__ === 'undefined') {
         zrUtil.createCanvas = creator;
     };
 
-    echarts.registerVisual(PRIORITY_VISUAL_GLOBAL, __webpack_require__(568));
-    echarts.registerPreprocessor(__webpack_require__(561));
-    echarts.registerLoading('default', __webpack_require__(552));
+    echarts.registerVisual(PRIORITY_VISUAL_GLOBAL, __webpack_require__(571));
+    echarts.registerPreprocessor(__webpack_require__(564));
+    echarts.registerLoading('default', __webpack_require__(555));
 
     // Default action
     echarts.registerAction({
@@ -2636,7 +2636,7 @@ if (typeof __DEV__ === 'undefined') {
         }
     );
 
-    echarts.helper = __webpack_require__(550);
+    echarts.helper = __webpack_require__(553);
 
 
     // PRIORITY
@@ -2668,7 +2668,7 @@ if (typeof __DEV__ === 'undefined') {
 
     var zrUtil = __webpack_require__(0);
 
-    var pathTool = __webpack_require__(639);
+    var pathTool = __webpack_require__(644);
     var Path = __webpack_require__(21);
     var colorTool = __webpack_require__(37);
     var matrix = __webpack_require__(29);
@@ -2688,29 +2688,29 @@ if (typeof __DEV__ === 'undefined') {
 
     graphic.Text = __webpack_require__(227);
 
-    graphic.Circle = __webpack_require__(630);
+    graphic.Circle = __webpack_require__(635);
 
-    graphic.Sector = __webpack_require__(636);
+    graphic.Sector = __webpack_require__(641);
 
-    graphic.Ring = __webpack_require__(635);
+    graphic.Ring = __webpack_require__(640);
 
-    graphic.Polygon = __webpack_require__(632);
+    graphic.Polygon = __webpack_require__(637);
 
-    graphic.Polyline = __webpack_require__(633);
+    graphic.Polyline = __webpack_require__(638);
 
-    graphic.Rect = __webpack_require__(634);
+    graphic.Rect = __webpack_require__(639);
 
-    graphic.Line = __webpack_require__(631);
+    graphic.Line = __webpack_require__(636);
 
-    graphic.BezierCurve = __webpack_require__(629);
+    graphic.BezierCurve = __webpack_require__(634);
 
-    graphic.Arc = __webpack_require__(628);
+    graphic.Arc = __webpack_require__(633);
 
-    graphic.CompoundPath = __webpack_require__(623);
+    graphic.CompoundPath = __webpack_require__(628);
 
     graphic.LinearGradient = __webpack_require__(224);
 
-    graphic.RadialGradient = __webpack_require__(624);
+    graphic.RadialGradient = __webpack_require__(629);
 
     graphic.BoundingRect = BoundingRect;
 
@@ -9756,24 +9756,24 @@ var echarts = __webpack_require__(1);
 var Scene = __webpack_require__(75);
 var LRUCache = __webpack_require__(141);
 var textureUtil = __webpack_require__(96);
-var EChartsSurface = __webpack_require__(310);
-var AmbientCubemapLight = __webpack_require__(576);
-var AmbientSHLight = __webpack_require__(577);
-var shUtil = __webpack_require__(606);
+var EChartsSurface = __webpack_require__(313);
+var AmbientCubemapLight = __webpack_require__(579);
+var AmbientSHLight = __webpack_require__(580);
+var shUtil = __webpack_require__(609);
 var retrieve = __webpack_require__(16);
 
-var animatableMixin = __webpack_require__(312);
+var animatableMixin = __webpack_require__(315);
 echarts.util.extend(Node3D.prototype, animatableMixin);
 
 // Some common shaders
-Shader.import(__webpack_require__(602));
+Shader.import(__webpack_require__(605));
 Shader.import(__webpack_require__(212));
-Shader.import(__webpack_require__(320));
-Shader.import(__webpack_require__(319));
 Shader.import(__webpack_require__(323));
+Shader.import(__webpack_require__(322));
 Shader.import(__webpack_require__(326));
-Shader.import(__webpack_require__(321));
-Shader.import(__webpack_require__(327));
+Shader.import(__webpack_require__(329));
+Shader.import(__webpack_require__(324));
+Shader.import(__webpack_require__(330));
 
 function isValueNone(value) {
     return !value || value === 'none';
@@ -9876,7 +9876,7 @@ graphicGL.PlaneGeometry = __webpack_require__(128);
 graphicGL.CubeGeometry = __webpack_require__(204);
 
 // Lights
-graphicGL.AmbientLight = __webpack_require__(575);
+graphicGL.AmbientLight = __webpack_require__(578);
 graphicGL.DirectionalLight = __webpack_require__(206);
 graphicGL.PointLight = __webpack_require__(207);
 graphicGL.SpotLight = __webpack_require__(208);
@@ -9888,13 +9888,13 @@ graphicGL.OrthographicCamera = __webpack_require__(93);
 // Math
 graphicGL.Vector2 = __webpack_require__(59);
 graphicGL.Vector3 = __webpack_require__(11);
-graphicGL.Vector4 = __webpack_require__(582);
+graphicGL.Vector4 = __webpack_require__(585);
 
 graphicGL.Quaternion = __webpack_require__(130);
 
-graphicGL.Matrix2 = __webpack_require__(579);
-graphicGL.Matrix2d = __webpack_require__(580);
-graphicGL.Matrix3 = __webpack_require__(581);
+graphicGL.Matrix2 = __webpack_require__(582);
+graphicGL.Matrix2d = __webpack_require__(583);
+graphicGL.Matrix3 = __webpack_require__(584);
 graphicGL.Matrix4 = __webpack_require__(24);
 
 graphicGL.Plane = __webpack_require__(209);
@@ -10516,10 +10516,10 @@ module.exports = graphicGL;
     clazzUtil.enableClassExtend(Model);
 
     var mixin = zrUtil.mixin;
+    mixin(Model, __webpack_require__(562));
     mixin(Model, __webpack_require__(559));
-    mixin(Model, __webpack_require__(556));
-    mixin(Model, __webpack_require__(560));
-    mixin(Model, __webpack_require__(558));
+    mixin(Model, __webpack_require__(563));
+    mixin(Model, __webpack_require__(561));
 
     module.exports = Model;
 
@@ -13074,7 +13074,7 @@ module.exports = graphicGL;
         });
     }
 
-    zrUtil.mixin(ComponentModel, __webpack_require__(557));
+    zrUtil.mixin(ComponentModel, __webpack_require__(560));
 
     module.exports = ComponentModel;
 
@@ -14106,7 +14106,7 @@ module.exports = retrieve;
 
 
 
-    var extendMixin = __webpack_require__(574);
+    var extendMixin = __webpack_require__(577);
     var notifierMixin = __webpack_require__(127);
     var util = __webpack_require__(58);
 
@@ -14149,7 +14149,7 @@ module.exports = retrieve;
     var Displayable = __webpack_require__(99);
     var zrUtil = __webpack_require__(0);
     var PathProxy = __webpack_require__(60);
-    var pathContain = __webpack_require__(620);
+    var pathContain = __webpack_require__(625);
 
     var Pattern = __webpack_require__(225);
     var getCanvasPattern = Pattern.prototype.getCanvasPattern;
@@ -16957,10 +16957,10 @@ module.exports = {
 
 
 
-    var OrdinalScale = __webpack_require__(565);
+    var OrdinalScale = __webpack_require__(568);
     var IntervalScale = __webpack_require__(90);
-    __webpack_require__(566);
-    __webpack_require__(564);
+    __webpack_require__(569);
+    __webpack_require__(567);
     var Scale = __webpack_require__(91);
 
     var numberUtil = __webpack_require__(3);
@@ -19075,7 +19075,7 @@ module.exports = {
  */
 
 
-    var Geometry = __webpack_require__(569);
+    var Geometry = __webpack_require__(572);
     var BoundingBox = __webpack_require__(32);
     var glMatrix = __webpack_require__(4);
     var vendor = __webpack_require__(46);
@@ -24738,7 +24738,7 @@ module.exports = LinesGeometry;
     var glinfo = __webpack_require__(45);
     var glenum = __webpack_require__(23);
 
-    Shader['import'](__webpack_require__(597));
+    Shader['import'](__webpack_require__(600));
 
     var planeGeo = new Plane();
     var mesh = new Mesh({
@@ -27437,7 +27437,7 @@ module.exports = {
 var echarts = __webpack_require__(1);
 
 var Scene = __webpack_require__(75);
-var ShadowMapPass = __webpack_require__(584);
+var ShadowMapPass = __webpack_require__(587);
 var PerspectiveCamera = __webpack_require__(94);
 var OrthographicCamera = __webpack_require__(93);
 var Matrix4 = __webpack_require__(24);
@@ -27446,8 +27446,8 @@ var Vector2 = __webpack_require__(59);
 
 var notifier = __webpack_require__(127);
 
-var EffectCompositor = __webpack_require__(301);
-var TemporalSuperSampling = __webpack_require__(305);
+var EffectCompositor = __webpack_require__(304);
+var TemporalSuperSampling = __webpack_require__(308);
 var halton = __webpack_require__(103);
 
 /**
@@ -28024,11 +28024,11 @@ module.exports = {
 
     var echarts = __webpack_require__(1);
     var axisPointerModelHelper = __webpack_require__(84);
-    var axisTrigger = __webpack_require__(446);
+    var axisTrigger = __webpack_require__(449);
     var zrUtil = __webpack_require__(0);
 
-    __webpack_require__(442);
-    __webpack_require__(443);
+    __webpack_require__(445);
+    __webpack_require__(446);
 
     // CartesianAxisPointer is not supposed to be required here. But consider
     // echarts.simple.js and online build tooltip, which only require gridSimple,
@@ -28096,7 +28096,7 @@ module.exports = {
     var echarts = __webpack_require__(1);
     var modelUtil = __webpack_require__(5);
     var helper = __webpack_require__(111);
-    var AxisProxy = __webpack_require__(457);
+    var AxisProxy = __webpack_require__(460);
     var each = zrUtil.each;
     var eachAxisDim = helper.eachAxisDim;
 
@@ -28723,7 +28723,7 @@ module.exports = {
 
     __webpack_require__(118);
 
-    __webpack_require__(435);
+    __webpack_require__(438);
 
     // Grid view
     echarts.extendComponentView({
@@ -31394,7 +31394,7 @@ module.exports = "@export ecgl.lines3D.vertex\n\nuniform mat4 worldViewProjectio
 
     var List = __webpack_require__(13);
     var completeDimensions = __webpack_require__(26);
-    var WhiskerBoxDraw = __webpack_require__(382);
+    var WhiskerBoxDraw = __webpack_require__(385);
     var zrUtil = __webpack_require__(0);
 
     var seriesModelMixin = {
@@ -32354,7 +32354,7 @@ module.exports = "@export ecgl.lines3D.vertex\n\nuniform mat4 worldViewProjectio
 
 
 
-    var Geo = __webpack_require__(526);
+    var Geo = __webpack_require__(529);
 
     var layout = __webpack_require__(6);
     var zrUtil = __webpack_require__(0);
@@ -33493,8 +33493,8 @@ module.exports = "@export ecgl.lines3D.vertex\n\nuniform mat4 worldViewProjectio
     var Skydome = __webpack_require__(133);
     var Scene = __webpack_require__(75);
 
-    var dds = __webpack_require__(604);
-    var hdr = __webpack_require__(605);
+    var dds = __webpack_require__(607);
+    var hdr = __webpack_require__(608);
 
     /**
      * @namespace qtek.util.texture
@@ -34373,8 +34373,8 @@ module.exports = "@export ecgl.lines3D.vertex\n\nuniform mat4 worldViewProjectio
 
 var echarts = __webpack_require__(1);
 var graphicGL = __webpack_require__(9);
-var spriteUtil = __webpack_require__(328);
-var PointsMesh = __webpack_require__(246);
+var spriteUtil = __webpack_require__(331);
+var PointsMesh = __webpack_require__(249);
 var LabelsBuilder = __webpack_require__(102);
 var Matrix4 = __webpack_require__(24);
 
@@ -35139,9 +35139,9 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 var graphicGL = __webpack_require__(9);
-var SpritesGeometry = __webpack_require__(317);
+var SpritesGeometry = __webpack_require__(320);
 
-graphicGL.Shader.import(__webpack_require__(322));
+graphicGL.Shader.import(__webpack_require__(325));
 
 module.exports = graphicGL.Mesh.extend(function () {
     var geometry = new SpritesGeometry({
@@ -35174,7 +35174,7 @@ module.exports = graphicGL.Mesh.extend(function () {
     var symbolUtil = __webpack_require__(27);
     var vector = __webpack_require__(7);
     // var matrix = require('zrender/lib/core/matrix');
-    var LinePath = __webpack_require__(381);
+    var LinePath = __webpack_require__(384);
     var graphic = __webpack_require__(2);
     var zrUtil = __webpack_require__(0);
     var numberUtil = __webpack_require__(3);
@@ -38097,8 +38097,8 @@ var factory = exports;
     var axisHelper = __webpack_require__(25);
 
     var zrUtil = __webpack_require__(0);
-    var Cartesian2D = __webpack_require__(523);
-    var Axis2D = __webpack_require__(522);
+    var Cartesian2D = __webpack_require__(526);
+    var Axis2D = __webpack_require__(525);
 
     var each = zrUtil.each;
 
@@ -38106,7 +38106,7 @@ var factory = exports;
     var niceScaleExtent = axisHelper.niceScaleExtent;
 
     // 依赖 GridModel, AxisModel 做预处理
-    __webpack_require__(524);
+    __webpack_require__(527);
 
     /**
      * Check if the axis is used in the specified grid
@@ -38705,7 +38705,7 @@ var factory = exports;
 // TODO Axis scale
 
 
-    var Polar = __webpack_require__(537);
+    var Polar = __webpack_require__(540);
     var numberUtil = __webpack_require__(3);
     var zrUtil = __webpack_require__(0);
 
@@ -38713,7 +38713,7 @@ var factory = exports;
     var niceScaleExtent = axisHelper.niceScaleExtent;
 
     // 依赖 PolarModel 做预处理
-    __webpack_require__(538);
+    __webpack_require__(541);
 
     /**
      * Resize method bound to the polar
@@ -39660,7 +39660,7 @@ var factory = exports;
 
     // Light header
     var Shader = __webpack_require__(22);
-    Shader['import'](__webpack_require__(599));
+    Shader['import'](__webpack_require__(602));
     Shader['import'](__webpack_require__(212));
 
     var glMatrix = __webpack_require__(4);
@@ -42254,7 +42254,7 @@ var factory = exports;
     var Material = __webpack_require__(44);
 
 
-    Shader.import(__webpack_require__(601));
+    Shader.import(__webpack_require__(604));
     /**
      * @constructor qtek.plugin.Skybox
      *
@@ -42376,7 +42376,7 @@ var factory = exports;
     var Shader = __webpack_require__(22);
     var Material = __webpack_require__(44);
 
-    Shader.import(__webpack_require__(585));
+    Shader.import(__webpack_require__(588));
     /**
      * @constructor qtek.plugin.Skydome
      *
@@ -44244,7 +44244,7 @@ var factory = exports;
 var echarts = __webpack_require__(1);
 var graphicGL = __webpack_require__(9);
 // var Triangulation = require('../../util/Triangulation');
-var earcut = __webpack_require__(313);
+var earcut = __webpack_require__(316);
 var LinesGeo = __webpack_require__(48);
 var retrieve = __webpack_require__(16);
 var glmatrix = __webpack_require__(4);
@@ -45170,7 +45170,7 @@ module.exports = {
 /* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Geo3D = __webpack_require__(292);
+var Geo3D = __webpack_require__(295);
 var echarts = __webpack_require__(1);
 var layoutUtil = __webpack_require__(6);
 var ViewGL = __webpack_require__(63);
@@ -48628,8 +48628,8 @@ module.exports = ZRTextureAtlasSurface;
 
 
     __webpack_require__(193);
-    __webpack_require__(533);
-    __webpack_require__(484);
+    __webpack_require__(536);
+    __webpack_require__(487);
 
     var echarts = __webpack_require__(1);
     var zrUtil = __webpack_require__(0);
@@ -48744,7 +48744,7 @@ module.exports = ZRTextureAtlasSurface;
     }
 
     echarts.registerPreprocessor(
-        __webpack_require__(534)
+        __webpack_require__(537)
     );
 
 
@@ -48755,12 +48755,12 @@ module.exports = ZRTextureAtlasSurface;
 
 
 
-    __webpack_require__(548);
-    __webpack_require__(440);
-    __webpack_require__(544);
+    __webpack_require__(551);
+    __webpack_require__(443);
+    __webpack_require__(547);
     __webpack_require__(66);
 
-    __webpack_require__(445);
+    __webpack_require__(448);
 
     var echarts = __webpack_require__(1);
 
@@ -50749,7 +50749,7 @@ module.exports = ZRTextureAtlasSurface;
  */
 
 
-    var Parallel = __webpack_require__(531);
+    var Parallel = __webpack_require__(534);
 
     function create(ecModel, api) {
         var coordSysList = [];
@@ -52170,7 +52170,7 @@ module.exports = ZRTextureAtlasSurface;
 
 
 
-    var Graph = __webpack_require__(571);
+    var Graph = __webpack_require__(574);
     var TexturePool = __webpack_require__(202);
     var FrameBuffer = __webpack_require__(28);
 
@@ -53388,7 +53388,7 @@ module.exports = g;
     var guid = __webpack_require__(223);
     var Eventful = __webpack_require__(54);
     var Transformable = __webpack_require__(139);
-    var Animatable = __webpack_require__(637);
+    var Animatable = __webpack_require__(642);
     var zrUtil = __webpack_require__(0);
 
     /**
@@ -53652,7 +53652,7 @@ module.exports = g;
  */
 
 
-    var Clip = __webpack_require__(616);
+    var Clip = __webpack_require__(621);
     var color = __webpack_require__(37);
     var util = __webpack_require__(0);
     var isArrayLike = util.isArrayLike;
@@ -55263,8 +55263,8 @@ module.exports = g;
 
 
 
-    var smoothSpline = __webpack_require__(627);
-    var smoothBezier = __webpack_require__(626);
+    var smoothSpline = __webpack_require__(632);
+    var smoothBezier = __webpack_require__(631);
 
     module.exports = {
         buildPath: function (ctx, shape, closePath) {
@@ -55532,15 +55532,15 @@ if (!__webpack_require__(15).canvasSupported) {
     var env = __webpack_require__(15);
     var zrUtil = __webpack_require__(0);
 
-    var Handler = __webpack_require__(611);
-    var Storage = __webpack_require__(614);
-    var Animation = __webpack_require__(615);
-    var HandlerProxy = __webpack_require__(622);
+    var Handler = __webpack_require__(616);
+    var Storage = __webpack_require__(619);
+    var Animation = __webpack_require__(620);
+    var HandlerProxy = __webpack_require__(627);
 
     var useVML = !env.canvasSupported;
 
     var painterCtors = {
-        canvas: __webpack_require__(613)
+        canvas: __webpack_require__(618)
     };
 
     var instances = {};    // ZRender实例map索引
@@ -55955,21 +55955,21 @@ if (!__webpack_require__(15).canvasSupported) {
 /* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(299);
+__webpack_require__(302);
 
-__webpack_require__(284);
-__webpack_require__(278);
+__webpack_require__(287);
 __webpack_require__(281);
+__webpack_require__(284);
 
-__webpack_require__(241);
-__webpack_require__(256);
-__webpack_require__(268);
+__webpack_require__(244);
 __webpack_require__(259);
-__webpack_require__(274);
-__webpack_require__(265);
-
 __webpack_require__(271);
-__webpack_require__(248);
+__webpack_require__(262);
+__webpack_require__(277);
+__webpack_require__(268);
+
+__webpack_require__(274);
+__webpack_require__(251);
 
 /***/ }),
 /* 233 */
@@ -55981,57 +55981,88 @@ __webpack_require__(248);
 module.exports = __webpack_require__(1);
 
 // Import all charts and components
-__webpack_require__(383);
-__webpack_require__(331);
-__webpack_require__(404);
-__webpack_require__(419);
-__webpack_require__(409);
-
-__webpack_require__(392);
-__webpack_require__(427);
-__webpack_require__(360);
-__webpack_require__(356);
-__webpack_require__(352);
-__webpack_require__(399);
-__webpack_require__(414);
-__webpack_require__(337);
-__webpack_require__(342);
-__webpack_require__(349);
-__webpack_require__(387);
-__webpack_require__(373);
-__webpack_require__(403);
+__webpack_require__(386);
+__webpack_require__(334);
+__webpack_require__(407);
 __webpack_require__(422);
-__webpack_require__(348);
+__webpack_require__(412);
 
-__webpack_require__(468);
-__webpack_require__(469);
-__webpack_require__(470);
-__webpack_require__(508);
+__webpack_require__(395);
+__webpack_require__(430);
+__webpack_require__(363);
+__webpack_require__(359);
+__webpack_require__(355);
+__webpack_require__(402);
+__webpack_require__(417);
+__webpack_require__(340);
+__webpack_require__(345);
+__webpack_require__(352);
+__webpack_require__(390);
+__webpack_require__(376);
+__webpack_require__(406);
+__webpack_require__(425);
+__webpack_require__(351);
+
+__webpack_require__(471);
+__webpack_require__(472);
+__webpack_require__(473);
+__webpack_require__(511);
 __webpack_require__(66);
-__webpack_require__(485);
-__webpack_require__(466);
+__webpack_require__(488);
+__webpack_require__(469);
 __webpack_require__(176);
 __webpack_require__(177);
-__webpack_require__(447);
-__webpack_require__(454);
+__webpack_require__(450);
+__webpack_require__(457);
 
-__webpack_require__(498);
+__webpack_require__(501);
 
-__webpack_require__(456);
-__webpack_require__(512);
+__webpack_require__(459);
+__webpack_require__(515);
 
-__webpack_require__(477);
-__webpack_require__(476);
-__webpack_require__(475);
+__webpack_require__(480);
+__webpack_require__(479);
+__webpack_require__(478);
 
-__webpack_require__(489);
-__webpack_require__(499);
+__webpack_require__(492);
+__webpack_require__(502);
 
-__webpack_require__(643);
+__webpack_require__(648);
 
 
 /***/ }),
 /* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(236);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(614)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../css-loader/index.js!./normalize.css", function() {
+			var newContent = require("!!../css-loader/index.js!./normalize.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -56044,6 +56075,10 @@ var _echarts2 = _interopRequireDefault(_echarts);
 var _echartsGl = __webpack_require__(232);
 
 var _echartsGl2 = _interopRequireDefault(_echartsGl);
+
+var _normalize = __webpack_require__(234);
+
+var _normalize2 = _interopRequireDefault(_normalize);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -56107,7 +56142,103 @@ var chart = _echarts2.default.init(element);
 chart.setOption(option);
 
 /***/ }),
-/* 235 */
+/* 236 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(237)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */\n\n/* Document\n   ========================================================================== */\n\n/**\n * 1. Correct the line height in all browsers.\n * 2. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\n\nhtml {\n  line-height: 1.15; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Add the correct display in IE 9-.\n */\n\narticle,\naside,\nfooter,\nheader,\nnav,\nsection {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in IE.\n */\n\nfigcaption,\nfigure,\nmain { /* 1 */\n  display: block;\n}\n\n/**\n * Add the correct margin in IE 8.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\n\na {\n  background-color: transparent; /* 1 */\n  -webkit-text-decoration-skip: objects; /* 2 */\n}\n\n/**\n * 1. Remove the bottom border in Chrome 57- and Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\n\nb,\nstrong {\n  font-weight: inherit;\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font style in Android 4.3-.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Add the correct background and color in IE 9-.\n */\n\nmark {\n  background-color: #ff0;\n  color: #000;\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\naudio,\nvideo {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in iOS 4-7.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\n\nimg {\n  border-style: none;\n}\n\n/**\n * Hide the overflow in IE.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: sans-serif; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\nhtml [type=\"button\"], /* 1 */\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Correct the padding in Firefox.\n */\n\nfieldset {\n  padding: 0.35em 0.75em 0.625em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * 1. Add the correct display in IE 9-.\n * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n */\n\ndetails, /* 1 */\nmenu {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Scripting\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\ncanvas {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in IE.\n */\n\ntemplate {\n  display: none;\n}\n\n/* Hidden\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10-.\n */\n\n[hidden] {\n  display: none;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 237 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -56115,9 +56246,9 @@ chart.setOption(option);
  */
 
 
-    var Clip = __webpack_require__(236);
-    var color = __webpack_require__(240);
-    var util = __webpack_require__(239);
+    var Clip = __webpack_require__(239);
+    var color = __webpack_require__(243);
+    var util = __webpack_require__(242);
     var isArrayLike = util.isArrayLike;
 
     var arraySlice = Array.prototype.slice;
@@ -56761,7 +56892,7 @@ chart.setOption(option);
 
 
 /***/ }),
-/* 236 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -56780,7 +56911,7 @@ chart.setOption(option);
  */
 
 
-    var easingFuncs = __webpack_require__(237);
+    var easingFuncs = __webpack_require__(240);
 
     function Clip(options) {
 
@@ -56890,7 +57021,7 @@ chart.setOption(option);
 
 
 /***/ }),
-/* 237 */
+/* 240 */
 /***/ (function(module, exports) {
 
 /**
@@ -57241,7 +57372,7 @@ chart.setOption(option);
 
 
 /***/ }),
-/* 238 */
+/* 241 */
 /***/ (function(module, exports) {
 
 
@@ -57289,7 +57420,7 @@ chart.setOption(option);
 
 
 /***/ }),
-/* 239 */
+/* 242 */
 /***/ (function(module, exports) {
 
 /**
@@ -57839,7 +57970,7 @@ chart.setOption(option);
 
 
 /***/ }),
-/* 240 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -58377,15 +58508,15 @@ chart.setOption(option);
 
 
 /***/ }),
-/* 241 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 
-__webpack_require__(244);
+__webpack_require__(247);
 
-__webpack_require__(243);
-__webpack_require__(242);
+__webpack_require__(246);
+__webpack_require__(245);
 
 echarts.registerVisual(echarts.util.curry(
     __webpack_require__(38), 'bar3D'
@@ -58401,7 +58532,7 @@ echarts.registerProcessor(function (ecModel, api) {
 });
 
 /***/ }),
-/* 242 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -58496,13 +58627,13 @@ echarts.util.merge(Bar3DSeries.prototype, componentShadingMixin);
 module.exports = Bar3DSeries;
 
 /***/ }),
-/* 243 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 var graphicGL = __webpack_require__(9);
 var retrieve = __webpack_require__(16);
-var BarsGeometry = __webpack_require__(314);
+var BarsGeometry = __webpack_require__(317);
 var LabelsBuilder = __webpack_require__(102);
 var vec3 = __webpack_require__(4).vec3;
 var modelUtil = __webpack_require__(5);
@@ -58837,13 +58968,13 @@ module.exports = echarts.extendChartView({
 });
 
 /***/ }),
-/* 244 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 var Vector3 = __webpack_require__(11);
 var vec3 = __webpack_require__(4).vec3;
-var cartesian3DLayout = __webpack_require__(245);
+var cartesian3DLayout = __webpack_require__(248);
 
 function globeLayout(seriesModel, coordSys) {
     var data = seriesModel.getData();
@@ -58929,7 +59060,7 @@ echarts.registerLayout(function (ecModel, api) {
 });
 
 /***/ }),
-/* 245 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -59000,16 +59131,16 @@ function cartesian3DLayout(seriesModel, coordSys) {
 module.exports = cartesian3DLayout;
 
 /***/ }),
-/* 246 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var graphicGL = __webpack_require__(9);
-var verticesSortMixin = __webpack_require__(318);
+var verticesSortMixin = __webpack_require__(321);
 var echarts = __webpack_require__(1);
 var glmatrix = __webpack_require__(4);
 var vec4 = glmatrix.vec4;
 
-graphicGL.Shader.import(__webpack_require__(247));
+graphicGL.Shader.import(__webpack_require__(250));
 
 var PointsMesh = graphicGL.Mesh.extend(function () {
     var geometry = new graphicGL.Geometry({
@@ -59118,20 +59249,20 @@ var PointsMesh = graphicGL.Mesh.extend(function () {
 module.exports = PointsMesh;
 
 /***/ }),
-/* 247 */
+/* 250 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.sdfSprite.vertex\n\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nuniform float elapsedTime : 0;\n\nattribute vec3 position : POSITION;\nattribute float size;\n\n#ifdef VERTEX_COLOR\nattribute vec4 a_FillColor: COLOR;\nvarying vec4 v_Color;\n#endif\n\n#ifdef VERTEX_ANIMATION\nattribute vec3 prevPosition;\nattribute float prevSize;\nuniform float percent : 1.0;\n#endif\n\n\n#ifdef POSITIONTEXTURE_ENABLED\nuniform sampler2D positionTexture;\n#endif\n\nvarying float v_Size;\n\nvoid main()\n{\n\n#ifdef POSITIONTEXTURE_ENABLED\n        gl_Position = worldViewProjection * vec4(texture2D(positionTexture, position.xy).xy, -10.0, 1.0);\n#else\n\n    #ifdef VERTEX_ANIMATION\n    vec3 pos = mix(prevPosition, position, percent);\n    #else\n    vec3 pos = position;\n    #endif\n    gl_Position = worldViewProjection * vec4(pos, 1.0);\n#endif\n\n#ifdef VERTEX_ANIMATION\n    v_Size = mix(prevSize, size, percent);\n#else\n    v_Size = size;\n#endif\n\n#ifdef VERTEX_COLOR\n    v_Color = a_FillColor;\n    #endif\n\n    gl_PointSize = v_Size;\n}\n\n@end\n\n@export ecgl.sdfSprite.fragment\n\nuniform vec4 color: [1, 1, 1, 1];\nuniform vec4 strokeColor: [1, 1, 1, 1];\nuniform float smoothing: 0.07;\n\nuniform float lineWidth: 0.0;\n\n#ifdef VERTEX_COLOR\nvarying vec4 v_Color;\n#endif\n\nvarying float v_Size;\n\nuniform sampler2D sprite;\n\n@import qtek.util.srgb\n\nvoid main()\n{\n    gl_FragColor = color;\n\n    vec4 _strokeColor = strokeColor;\n\n#ifdef VERTEX_COLOR\n    gl_FragColor *= v_Color;\n        #endif\n\n#ifdef SPRITE_ENABLED\n    float d = texture2D(sprite, gl_PointCoord).r;\n        gl_FragColor.a *= smoothstep(0.5 - smoothing, 0.5 + smoothing, d);\n\n    if (lineWidth > 0.0) {\n                float sLineWidth = lineWidth / 2.0;\n\n        float outlineMaxValue0 = 0.5 + sLineWidth;\n        float outlineMaxValue1 = 0.5 + sLineWidth + smoothing;\n        float outlineMinValue0 = 0.5 - sLineWidth - smoothing;\n        float outlineMinValue1 = 0.5 - sLineWidth;\n\n                if (d <= outlineMaxValue1 && d >= outlineMinValue0) {\n            float a = _strokeColor.a;\n            if (d <= outlineMinValue1) {\n                a = a * smoothstep(outlineMinValue0, outlineMinValue1, d);\n            }\n            else {\n                a = a * smoothstep(outlineMaxValue1, outlineMaxValue0, d);\n            }\n            gl_FragColor.rgb = mix(gl_FragColor.rgb * gl_FragColor.a, _strokeColor.rgb, a);\n            gl_FragColor.a = gl_FragColor.a * (1.0 - a) + a;\n        }\n    }\n#endif\n\n#ifdef SRGB_DECODE\n    gl_FragColor = sRGBToLinear(gl_FragColor);\n#endif\n}\n@end";
 
 
 /***/ }),
-/* 248 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 
-__webpack_require__(251);
-__webpack_require__(252);
+__webpack_require__(254);
+__webpack_require__(255);
 
 echarts.registerVisual(echarts.util.curry(
     __webpack_require__(31), 'graphGL', 'circle', null
@@ -59237,12 +59368,12 @@ echarts.registerAction({
 }, function () {});
 
 /***/ }),
-/* 249 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Texture2D = __webpack_require__(19);
 var Texture = __webpack_require__(18);
-var workerFunc = __webpack_require__(255);
+var workerFunc = __webpack_require__(258);
 var workerUrl = workerFunc.toString();
 workerUrl = workerUrl.slice(workerUrl.indexOf('{') + 1, workerUrl.lastIndexOf('}'));
 
@@ -59523,7 +59654,7 @@ ForceAtlas2.prototype.dispose = function (renderer) {
 module.exports = ForceAtlas2;
 
 /***/ }),
-/* 250 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -59531,7 +59662,7 @@ var graphicGL = __webpack_require__(9);
 var Pass = __webpack_require__(53);
 var FrameBuffer = __webpack_require__(28);
 
-graphicGL.Shader.import(__webpack_require__(254));
+graphicGL.Shader.import(__webpack_require__(257));
 
 var defaultConfigs = {
     repulsionByDegree: true,
@@ -60004,11 +60135,11 @@ echarts.ForceAtlas2GPU = ForceAtlas2GPU;
 module.exports = ForceAtlas2GPU;
 
 /***/ }),
-/* 251 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
-var createGraphFromNodeEdge = __webpack_require__(253);
+var createGraphFromNodeEdge = __webpack_require__(256);
 
 var GraphSeries = echarts.extendSeriesModel({
 
@@ -60252,25 +60383,25 @@ var GraphSeries = echarts.extendSeriesModel({
 module.exports = GraphSeries;
 
 /***/ }),
-/* 252 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 var layoutUtil = __webpack_require__(6);
 var graphicGL = __webpack_require__(9);
 var ViewGL = __webpack_require__(63);
-var Lines2DGeometry = __webpack_require__(315);
+var Lines2DGeometry = __webpack_require__(318);
 var retrieve = __webpack_require__(16);
-var ForceAtlas2GPU = __webpack_require__(250);
-var ForceAtlas2 = __webpack_require__(249);
+var ForceAtlas2GPU = __webpack_require__(253);
+var ForceAtlas2 = __webpack_require__(252);
 var requestAnimationFrame = __webpack_require__(140);
 var vec2 = __webpack_require__(4).vec2;
 
-var Roam2DControl = __webpack_require__(311);
+var Roam2DControl = __webpack_require__(314);
 
 var PointsBuilder = __webpack_require__(101);
 
-graphicGL.Shader.import(__webpack_require__(324));
+graphicGL.Shader.import(__webpack_require__(327));
 
 var globalLayoutId = 1;
 
@@ -60706,7 +60837,7 @@ echarts.extendChartView({
 });
 
 /***/ }),
-/* 253 */
+/* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -60767,14 +60898,14 @@ module.exports = function (nodes, edges, hostModel, directed, beforeLink) {
 };
 
 /***/ }),
-/* 254 */
+/* 257 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.forceAtlas2.updateNodeRepulsion\n\n#define NODE_COUNT 0\n\nuniform sampler2D positionTex;\n\nuniform vec2 textureSize;\nuniform float gravity;\nuniform float scaling;\nuniform vec2 gravityCenter;\n\nuniform bool strongGravityMode;\nuniform bool preventOverlap;\n\nvarying vec2 v_Texcoord;\n\nvoid main() {\n\n    vec4 n0 = texture2D(positionTex, v_Texcoord);\n\n    vec2 force = vec2(0.0);\n    for (int i = 0; i < NODE_COUNT; i++) {\n        vec2 uv = vec2(\n            mod(float(i), textureSize.x) / (textureSize.x - 1.0),\n            floor(float(i) / textureSize.x) / (textureSize.y - 1.0)\n        );\n        vec4 n1 = texture2D(positionTex, uv);\n\n        vec2 dir = n0.xy - n1.xy;\n        float d2 = dot(dir, dir);\n\n        if (d2 > 0.0) {\n            float factor = 0.0;\n            if (preventOverlap) {\n                float d = sqrt(d2);\n                d = d - n0.w - n1.w;\n                if (d > 0.0) {\n                    factor = scaling * n0.z * n1.z / (d * d);\n                }\n                else if (d < 0.0) {\n                                        factor = scaling * 100.0 * n0.z * n1.z;\n                }\n            }\n            else {\n                                factor = scaling * n0.z * n1.z / d2;\n            }\n            force += dir * factor;\n        }\n    }\n\n        vec2 dir = gravityCenter - n0.xy;\n    float d = 1.0;\n    if (!strongGravityMode) {\n        d = length(dir);\n    }\n\n    force += dir * n0.z * gravity / (d + 1.0);\n\n    gl_FragColor = vec4(force, 0.0, 1.0);\n}\n@end\n\n@export ecgl.forceAtlas2.updateEdgeAttraction.vertex\n\nattribute vec2 node1;\nattribute vec2 node2;\nattribute float weight;\n\nuniform sampler2D positionTex;\nuniform float edgeWeightInfluence;\nuniform bool preventOverlap;\nuniform bool linLogMode;\n\nuniform vec2 windowSize: WINDOW_SIZE;\n\nvarying vec2 v_Force;\n\nvoid main() {\n\n    vec4 n0 = texture2D(positionTex, node1);\n    vec4 n1 = texture2D(positionTex, node2);\n\n    vec2 dir = n1.xy - n0.xy;\n    float d = length(dir);\n    float w;\n    if (edgeWeightInfluence == 0.0) {\n        w = 1.0;\n    }\n    else if (edgeWeightInfluence == 1.0) {\n        w = weight;\n    }\n    else {\n        w = pow(weight, edgeWeightInfluence);\n    }\n            vec2 offset = vec2(1.0 / windowSize.x, 1.0 / windowSize.y);\n    vec2 scale = vec2((windowSize.x - 1.0) / windowSize.x, (windowSize.y - 1.0) / windowSize.y);\n    vec2 pos = node1 * scale * 2.0 - 1.0;\n    gl_Position = vec4(pos + offset, 0.0, 1.0);\n    gl_PointSize = 1.0;\n\n    float factor;\n    if (preventOverlap) {\n        d = d - n1.w - n0.w;\n    }\n    if (d <= 0.0) {\n        v_Force = vec2(0.0);\n        return;\n    }\n\n    if (linLogMode) {\n                factor = w * log(d) / d;\n    }\n    else {\n        factor = w;\n    }\n    v_Force = dir * factor;\n}\n@end\n\n@export ecgl.forceAtlas2.updateEdgeAttraction.fragment\n\nvarying vec2 v_Force;\n\nvoid main() {\n    gl_FragColor = vec4(v_Force, 0.0, 0.0);\n}\n@end\n\n@export ecgl.forceAtlas2.calcWeightedSum.vertex\n\nattribute vec2 node;\n\nvarying vec2 v_NodeUv;\n\nvoid main() {\n\n    v_NodeUv = node;\n    gl_Position = vec4(0.0, 0.0, 0.0, 1.0);\n    gl_PointSize = 1.0;\n}\n@end\n\n@export ecgl.forceAtlas2.calcWeightedSum.fragment\n\nvarying vec2 v_NodeUv;\n\nuniform sampler2D positionTex;\nuniform sampler2D forceTex;\nuniform sampler2D forcePrevTex;\n\nvoid main() {\n    vec2 force = texture2D(forceTex, v_NodeUv).rg;\n    vec2 forcePrev = texture2D(forcePrevTex, v_NodeUv).rg;\n\n    float mass = texture2D(positionTex, v_NodeUv).z;\n    float swing = length(force - forcePrev) * mass;\n    float traction = length(force + forcePrev) * 0.5 * mass;\n\n    gl_FragColor = vec4(swing, traction, 0.0, 0.0);\n}\n@end\n\n@export ecgl.forceAtlas2.calcGlobalSpeed\n\nuniform sampler2D globalSpeedPrevTex;\nuniform sampler2D weightedSumTex;\nuniform float jitterTolerence;\n\nvoid main() {\n    vec2 weightedSum = texture2D(weightedSumTex, vec2(0.5)).xy;\n    float prevGlobalSpeed = texture2D(globalSpeedPrevTex, vec2(0.5)).x;\n    float globalSpeed = jitterTolerence * jitterTolerence\n                * weightedSum.y / weightedSum.x;\n    if (prevGlobalSpeed > 0.0) {\n        globalSpeed = min(globalSpeed / prevGlobalSpeed, 1.5) * prevGlobalSpeed;\n    }\n    gl_FragColor = vec4(globalSpeed, 0.0, 0.0, 1.0);\n}\n@end\n\n@export ecgl.forceAtlas2.updatePosition\n\nuniform sampler2D forceTex;\nuniform sampler2D forcePrevTex;\nuniform sampler2D positionTex;\nuniform sampler2D globalSpeedTex;\n\nvarying vec2 v_Texcoord;\n\nvoid main() {\n    vec2 force = texture2D(forceTex, v_Texcoord).xy;\n    vec2 forcePrev = texture2D(forcePrevTex, v_Texcoord).xy;\n    vec4 node = texture2D(positionTex, v_Texcoord);\n\n    float globalSpeed = texture2D(globalSpeedTex, vec2(0.5)).r;\n    float swing = length(force - forcePrev);\n    float speed = 0.1 * globalSpeed / (0.1 + globalSpeed * sqrt(swing));\n\n        float df = length(force);\n    if (df > 0.0) {\n        speed = min(df * speed, 10.0) / df;\n\n        gl_FragColor = vec4(node.xy + speed * force, node.zw);\n    }\n    else {\n        gl_FragColor = node;\n    }\n}\n@end\n\n@export ecgl.forceAtlas2.edges.vertex\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\n\nattribute vec2 node;\nattribute vec4 a_Color : COLOR;\nvarying vec4 v_Color;\n\nuniform sampler2D positionTex;\n\nvoid main()\n{\n    gl_Position = worldViewProjection * vec4(\n        texture2D(positionTex, node).xy, -10.0, 1.0\n    );\n    v_Color = a_Color;\n}\n@end\n\n@export ecgl.forceAtlas2.edges.fragment\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\nvarying vec4 v_Color;\nvoid main() {\n    gl_FragColor = color * v_Color;\n}\n@end";
 
 
 /***/ }),
-/* 255 */
+/* 258 */
 /***/ (function(module, exports) {
 
 /****************************
@@ -61441,13 +61572,13 @@ function forceAtlas2Worker() {
 module.exports = forceAtlas2Worker;
 
 /***/ }),
-/* 256 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 
-__webpack_require__(257);
-__webpack_require__(258);
+__webpack_require__(260);
+__webpack_require__(261);
 
 echarts.registerVisual(echarts.util.curry(
     __webpack_require__(31), 'line3D', 'circle', null
@@ -61492,7 +61623,7 @@ echarts.registerLayout(function (ecModel, api) {
 });
 
 /***/ }),
-/* 257 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -61535,7 +61666,7 @@ var Line3DSeries = echarts.extendSeriesModel({
 module.exports = Line3DSeries;
 
 /***/ }),
-/* 258 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -61545,7 +61676,7 @@ var Lines3DGeometry = __webpack_require__(48);
 var Matrix4 = __webpack_require__(24);
 var Vector3 = __webpack_require__(11);
 var vec3 = __webpack_require__(4).vec3;
-var lineContain = __webpack_require__(238);
+var lineContain = __webpack_require__(241);
 
 graphicGL.Shader.import(__webpack_require__(82));
 
@@ -61832,15 +61963,15 @@ module.exports = echarts.extendChartView({
 });
 
 /***/ }),
-/* 259 */
+/* 262 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 
-__webpack_require__(263);
+__webpack_require__(266);
 
-__webpack_require__(261);
-__webpack_require__(260);
+__webpack_require__(264);
+__webpack_require__(263);
 
 echarts.registerVisual(echarts.util.curry(
     __webpack_require__(38), 'lines3D'
@@ -61866,7 +61997,7 @@ echarts.registerAction({
 }, function () {});
 
 /***/ }),
-/* 260 */
+/* 263 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -61942,14 +62073,14 @@ echarts.extendSeriesModel({
 });
 
 /***/ }),
-/* 261 */
+/* 264 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 var graphicGL = __webpack_require__(9);
 var LinesGeometry = __webpack_require__(48);
 // var TrailMesh = require('./TrailMesh');
-var TrailMesh2 = __webpack_require__(262);
+var TrailMesh2 = __webpack_require__(265);
 
 graphicGL.Shader.import(__webpack_require__(82));
 
@@ -62134,7 +62265,7 @@ module.exports = echarts.extendChartView({
 });
 
 /***/ }),
-/* 262 */
+/* 265 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -62147,7 +62278,7 @@ function sign(a) {
     return a > 0 ? 1 : -1;
 }
 
-graphicGL.Shader.import(__webpack_require__(264));
+graphicGL.Shader.import(__webpack_require__(267));
 
 module.exports = graphicGL.Mesh.extend(function () {
 
@@ -62268,7 +62399,7 @@ module.exports = graphicGL.Mesh.extend(function () {
 });
 
 /***/ }),
-/* 263 */
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -62476,20 +62607,20 @@ echarts.registerLayout(function (ecModel, api) {
 });
 
 /***/ }),
-/* 264 */
+/* 267 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.trail2.vertex\nattribute vec3 position: POSITION;\nattribute vec3 positionPrev;\nattribute vec3 positionNext;\nattribute float offset;\nattribute float dist;\nattribute float distAll;\nattribute float start;\n\nattribute vec4 a_Color : COLOR;\n\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nuniform vec4 viewport : VIEWPORT;\nuniform float near : NEAR;\n\nuniform float speed : 0;\nuniform float trailLength: 0.3;\nuniform float time;\nuniform float period: 1000;\n\nvarying vec4 v_Color;\nvarying float v_Percent;\n\n@import ecgl.common.wireframe.vertexHeader\n\n@import ecgl.lines3D.clipNear\n\nvoid main()\n{\n    @import ecgl.lines3D.expandLine\n\n    gl_Position = currProj;\n\n    v_Color = a_Color;\n\n    @import ecgl.common.wireframe.vertexMain\n\n#ifdef CONSTANT_SPEED\n    float t = mod((speed * time + start) / distAll, 1. + trailLength) - trailLength;\n#else\n    float t = mod((time + start) / period, 1. + trailLength) - trailLength;\n#endif\n\n    float trailLen = distAll * trailLength;\n\n    v_Percent = (dist - t * distAll) / trailLen;\n\n                }\n@end\n\n\n@export ecgl.trail2.fragment\n\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\n\nvarying vec4 v_Color;\nvarying float v_Percent;\n\n@import ecgl.common.wireframe.fragmentHeader\n\n@import qtek.util.srgb\n\nvoid main()\n{\nif (v_Percent > 1.0 || v_Percent < 0.0) {\n    discard;\n}\n\n    float fade = v_Percent;\n            if (v_Percent > 0.9) {\n        fade *= 2.0;\n    }\n\n#ifdef SRGB_DECODE\n    gl_FragColor = sRGBToLinear(color * v_Color);\n#else\n    gl_FragColor = color * v_Color;\n#endif\n\n    @import ecgl.common.wireframe.fragmentMain\n\n    gl_FragColor.a *= fade;\n}\n\n@end";
 
 
 /***/ }),
-/* 265 */
+/* 268 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 
-__webpack_require__(266);
-__webpack_require__(267);
+__webpack_require__(269);
+__webpack_require__(270);
 
 __webpack_require__(145);
 
@@ -62510,7 +62641,7 @@ echarts.registerAction({
 });
 
 /***/ }),
-/* 266 */
+/* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -62592,7 +62723,7 @@ echarts.util.merge(Map3DModel.prototype, componentShadingMixin);
 module.exports = Map3DModel;
 
 /***/ }),
-/* 267 */
+/* 270 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -62673,13 +62804,13 @@ module.exports = echarts.extendChartView({
 });
 
 /***/ }),
-/* 268 */
+/* 271 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 
-__webpack_require__(269);
-__webpack_require__(270);
+__webpack_require__(272);
+__webpack_require__(273);
 
 echarts.registerVisual(echarts.util.curry(
     __webpack_require__(31), 'scatter3D', 'circle', null
@@ -62738,7 +62869,7 @@ echarts.registerLayout(function (ecModel, api) {
 });
 
 /***/ }),
-/* 269 */
+/* 272 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -62826,7 +62957,7 @@ var Scatter3DSeries = echarts.extendSeriesModel({
 });
 
 /***/ }),
-/* 270 */
+/* 273 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -62912,13 +63043,13 @@ echarts.extendChartView({
 });
 
 /***/ }),
-/* 271 */
+/* 274 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 
-__webpack_require__(272);
-__webpack_require__(273);
+__webpack_require__(275);
+__webpack_require__(276);
 
 echarts.registerVisual(echarts.util.curry(
     __webpack_require__(31), 'scatterGL', 'circle', null
@@ -62961,7 +63092,7 @@ echarts.registerLayout(function (ecModel, api) {
 });
 
 /***/ }),
-/* 272 */
+/* 275 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -63006,7 +63137,7 @@ echarts.extendSeriesModel({
 });
 
 /***/ }),
-/* 273 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -63065,14 +63196,14 @@ echarts.extendChartView({
 });
 
 /***/ }),
-/* 274 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 
-__webpack_require__(275);
-__webpack_require__(276);
-__webpack_require__(277);
+__webpack_require__(278);
+__webpack_require__(279);
+__webpack_require__(280);
 
 echarts.registerVisual(echarts.util.curry(
     __webpack_require__(38), 'surface'
@@ -63080,7 +63211,7 @@ echarts.registerVisual(echarts.util.curry(
 
 
 /***/ }),
-/* 275 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -63269,7 +63400,7 @@ echarts.util.merge(SurfaceSeries.prototype, componentShadingMixin);
 module.exports = SurfaceSeries;
 
 /***/ }),
-/* 276 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -63755,7 +63886,7 @@ echarts.extendChartView({
 });
 
 /***/ }),
-/* 277 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -63790,13 +63921,13 @@ echarts.registerLayout(function (ecModel, api) {
 });
 
 /***/ }),
-/* 278 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 
-__webpack_require__(279);
-__webpack_require__(280);
+__webpack_require__(282);
+__webpack_require__(283);
 
 __webpack_require__(145);
 
@@ -63813,7 +63944,7 @@ echarts.registerAction({
 });
 
 /***/ }),
-/* 279 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -63910,7 +64041,7 @@ echarts.util.merge(Geo3DModel.prototype, componentShadingMixin);
 module.exports = Geo3DModel;
 
 /***/ }),
-/* 280 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Geo3DBuilder = __webpack_require__(142);
@@ -64012,15 +64143,15 @@ module.exports = echarts.extendComponentView({
 });
 
 /***/ }),
-/* 281 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 
-__webpack_require__(282);
-__webpack_require__(283);
+__webpack_require__(285);
+__webpack_require__(286);
 
-__webpack_require__(294);
+__webpack_require__(297);
 
 echarts.registerAction({
     type: 'globeChangeCamera',
@@ -64035,7 +64166,7 @@ echarts.registerAction({
 });
 
 /***/ }),
-/* 282 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -64188,7 +64319,7 @@ echarts.util.merge(GlobeModel.prototype, componentShadingMixin);
 module.exports = GlobeModel;
 
 /***/ }),
-/* 283 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -64197,7 +64328,7 @@ var graphicGL = __webpack_require__(9);
 var OrbitControl = __webpack_require__(81);
 var SceneHelper = __webpack_require__(77);
 
-var sunCalc = __webpack_require__(329);
+var sunCalc = __webpack_require__(332);
 var retrieve = __webpack_require__(16);
 
 module.exports = echarts.extendComponentView({
@@ -64643,14 +64774,14 @@ module.exports = echarts.extendComponentView({
 });
 
 /***/ }),
-/* 284 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(285);
 __webpack_require__(288);
-__webpack_require__(289);
+__webpack_require__(291);
+__webpack_require__(292);
 
-__webpack_require__(297);
+__webpack_require__(300);
 
 var echarts = __webpack_require__(1);
 echarts.registerAction({
@@ -64680,11 +64811,11 @@ echarts.registerAction({
 });
 
 /***/ }),
-/* 285 */
+/* 288 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
-var createAxis3DModel = __webpack_require__(291);
+var createAxis3DModel = __webpack_require__(294);
 
 var Axis3DModel = echarts.extendComponentModel({
 
@@ -64722,7 +64853,7 @@ createAxis3DModel('z', Axis3DModel, getAxisType, {
 });
 
 /***/ }),
-/* 286 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -64970,14 +65101,14 @@ Grid3DAxis.prototype.setSpriteAlign = function (textAlign, textVerticalAlign, ap
 module.exports = Grid3DAxis;
 
 /***/ }),
-/* 287 */
+/* 290 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
 var graphicGL = __webpack_require__(9);
 var retrieve = __webpack_require__(16);
 var Lines3DGeometry = __webpack_require__(48);
-var QuadsGeometry = __webpack_require__(316);
+var QuadsGeometry = __webpack_require__(319);
 var firstNotNull = retrieve.firstNotNull;
 var ifIgnoreOnTick = __webpack_require__(143);
 
@@ -65176,7 +65307,7 @@ Grid3DFace.prototype._udpateSplitAreas = function (geometry, axes, grid3DModel, 
 module.exports = Grid3DFace;
 
 /***/ }),
-/* 288 */
+/* 291 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -65326,7 +65457,7 @@ module.exports = Grid3DModel;
 
 
 /***/ }),
-/* 289 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // TODO orthographic camera
@@ -65339,8 +65470,8 @@ var retrieve = __webpack_require__(16);
 var firstNotNull = retrieve.firstNotNull;
 var ZRTextureAtlasSurface = __webpack_require__(147);
 var SceneHelper = __webpack_require__(77);
-var Grid3DFace = __webpack_require__(287);
-var Grid3DAxis = __webpack_require__(286);
+var Grid3DFace = __webpack_require__(290);
+var Grid3DAxis = __webpack_require__(289);
 var LabelsMesh = __webpack_require__(106);
 
 graphicGL.Shader.import(__webpack_require__(82));
@@ -65940,7 +66071,7 @@ module.exports = echarts.extendComponentView({
 });
 
 /***/ }),
-/* 290 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -66036,11 +66167,11 @@ module.exports = {
 };
 
 /***/ }),
-/* 291 */
+/* 294 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
-var axisDefault = __webpack_require__(290);
+var axisDefault = __webpack_require__(293);
 
 var AXIS_TYPES = ['value', 'category', 'time', 'log'];
 /**
@@ -66083,7 +66214,7 @@ module.exports = function (dim, BaseAxisModelClass, axisTypeDefaulter, extraDefa
 };
 
 /***/ }),
-/* 292 */
+/* 295 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -66266,7 +66397,7 @@ Geo3D.prototype = {
 module.exports = Geo3D;
 
 /***/ }),
-/* 293 */
+/* 296 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var glmatrix = __webpack_require__(4);
@@ -66340,10 +66471,10 @@ Globe.prototype = {
 module.exports = Globe;
 
 /***/ }),
-/* 294 */
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Globe = __webpack_require__(293);
+var Globe = __webpack_require__(296);
 var echarts = __webpack_require__(1);
 var layoutUtil = __webpack_require__(6);
 var ViewGL = __webpack_require__(63);
@@ -66421,7 +66552,7 @@ echarts.registerCoordinateSystem('globe', globeCreator);
 module.exports = globeCreator;
 
 /***/ }),
-/* 295 */
+/* 298 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -66450,7 +66581,7 @@ echarts.util.inherits(Axis3D, echarts.Axis);
 module.exports = Axis3D;
 
 /***/ }),
-/* 296 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -66507,11 +66638,11 @@ echarts.util.inherits(Cartesian3D, Cartesian);
 module.exports = Cartesian3D;
 
 /***/ }),
-/* 297 */
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Cartesian3D = __webpack_require__(296);
-var Axis3D = __webpack_require__(295);
+var Cartesian3D = __webpack_require__(299);
+var Axis3D = __webpack_require__(298);
 var echarts = __webpack_require__(1);
 var layoutUtil = __webpack_require__(6);
 var ViewGL = __webpack_require__(63);
@@ -66712,7 +66843,7 @@ echarts.registerCoordinateSystem('grid3D', grid3DCreator);
 module.exports = grid3DCreator;
 
 /***/ }),
-/* 298 */
+/* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -66733,7 +66864,7 @@ module.exports = grid3DCreator;
 
 var echarts = __webpack_require__(1);
 var Renderer = __webpack_require__(126);
-var RayPicking = __webpack_require__(583);
+var RayPicking = __webpack_require__(586);
 var Texture = __webpack_require__(18);
 
 // PENDING, qtek notifier is same with zrender Eventful
@@ -67364,7 +67495,7 @@ echarts.util.extend(LayerGL.prototype, notifier);
 module.exports = LayerGL;
 
 /***/ }),
-/* 299 */
+/* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -67410,8 +67541,8 @@ var echartsGl = {
     }
 };
 var echarts = __webpack_require__(1);
-var qtekVersion = __webpack_require__(610);
-var LayerGL = __webpack_require__(298);
+var qtekVersion = __webpack_require__(613);
+var LayerGL = __webpack_require__(301);
 
 // Version checking
 var deps = echartsGl.dependencies;
@@ -67631,21 +67762,21 @@ echarts.registerPostUpdate(function (ecModel, api) {
     egl.update(ecModel, api);
 });
 
-echarts.registerPreprocessor(__webpack_require__(309));
+echarts.registerPreprocessor(__webpack_require__(312));
 
 echarts.graphicGL = __webpack_require__(9);
 
 module.exports = EChartsGL;
 
 /***/ }),
-/* 300 */
+/* 303 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.dof.diskBlur\n\n#define POISSON_KERNEL_SIZE 16;\n\nuniform sampler2D texture;\nuniform sampler2D coc;\nvarying vec2 v_Texcoord;\n\nuniform float blurSize : 10.0;\nuniform vec2 textureSize : [512.0, 512.0];\n\nuniform vec2 poissonKernel[POISSON_KERNEL_SIZE];\n\nuniform float percent;\n\nfloat nrand(const in vec2 n) {\n    return fract(sin(dot(n.xy ,vec2(12.9898,78.233))) * 43758.5453);\n}\n\n@import qtek.util.rgbm\n@import qtek.util.float\n\n\nvoid main()\n{\n    vec2 offset = blurSize / textureSize;\n\n    float rnd = 6.28318 * nrand(v_Texcoord + 0.07 * percent );\n    float cosa = cos(rnd);\n    float sina = sin(rnd);\n    vec4 basis = vec4(cosa, -sina, sina, cosa);\n\n#if !defined(BLUR_NEARFIELD) && !defined(BLUR_COC)\n    offset *= abs(decodeFloat(texture2D(coc, v_Texcoord)) * 2.0 - 1.0);\n#endif\n\n#ifdef BLUR_COC\n    float cocSum = 0.0;\n#else\n    vec4 color = vec4(0.0);\n#endif\n\n\n    float weightSum = 0.0;\n\n    for (int i = 0; i < POISSON_KERNEL_SIZE; i++) {\n        vec2 ofs = poissonKernel[i];\n\n        ofs = vec2(dot(ofs, basis.xy), dot(ofs, basis.zw));\n\n        vec2 uv = v_Texcoord + ofs * offset;\n        vec4 texel = texture2D(texture, uv);\n\n        float w = 1.0;\n#ifdef BLUR_COC\n        float fCoc = decodeFloat(texel) * 2.0 - 1.0;\n                cocSum += clamp(fCoc, -1.0, 0.0) * w;\n#else\n        texel = decodeHDR(texel);\n    #if !defined(BLUR_NEARFIELD)\n        float fCoc = decodeFloat(texture2D(coc, uv)) * 2.0 - 1.0;\n                        w *= abs(fCoc);\n    #endif\n        color += texel * w;\n#endif\n\n        weightSum += w;\n    }\n\n#ifdef BLUR_COC\n    gl_FragColor = encodeFloat(clamp(cocSum / weightSum, -1.0, 0.0) * 0.5 + 0.5);\n#else\n    color /= weightSum;\n        gl_FragColor = encodeHDR(color);\n#endif\n}\n\n@end";
 
 
 /***/ }),
-/* 301 */
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Compositor = __webpack_require__(201);
@@ -67653,28 +67784,28 @@ var Shader = __webpack_require__(22);
 var Texture2D = __webpack_require__(19);
 var Texture = __webpack_require__(18);
 var FrameBuffer = __webpack_require__(28);
-var FXLoader = __webpack_require__(578);
-var SSAOPass = __webpack_require__(304);
-var poissonKernel = __webpack_require__(308);
+var FXLoader = __webpack_require__(581);
+var SSAOPass = __webpack_require__(307);
+var poissonKernel = __webpack_require__(311);
 var graphicGL = __webpack_require__(9);
-var NormalPass = __webpack_require__(302);
+var NormalPass = __webpack_require__(305);
 var Matrix4 = __webpack_require__(24);
 
-var effectJson = __webpack_require__(306);
+var effectJson = __webpack_require__(309);
 
-Shader['import'](__webpack_require__(587));
-Shader['import'](__webpack_require__(594));
-Shader['import'](__webpack_require__(595));
-Shader['import'](__webpack_require__(588));
 Shader['import'](__webpack_require__(590));
-Shader['import'](__webpack_require__(596));
-Shader['import'](__webpack_require__(592));
-Shader['import'](__webpack_require__(589));
-Shader['import'](__webpack_require__(593));
-Shader['import'](__webpack_require__(586));
+Shader['import'](__webpack_require__(597));
+Shader['import'](__webpack_require__(598));
 Shader['import'](__webpack_require__(591));
-Shader['import'](__webpack_require__(300));
-Shader['import'](__webpack_require__(307));
+Shader['import'](__webpack_require__(593));
+Shader['import'](__webpack_require__(599));
+Shader['import'](__webpack_require__(595));
+Shader['import'](__webpack_require__(592));
+Shader['import'](__webpack_require__(596));
+Shader['import'](__webpack_require__(589));
+Shader['import'](__webpack_require__(594));
+Shader['import'](__webpack_require__(303));
+Shader['import'](__webpack_require__(310));
 
 
 var commonOutputs = {
@@ -68084,7 +68215,7 @@ EffectCompositor.prototype.dispose = function (gl) {
 module.exports = EffectCompositor;
 
 /***/ }),
-/* 302 */
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // NormalPass will generate normal and depth data.
@@ -68097,7 +68228,7 @@ var Material = __webpack_require__(44);
 var Shader = __webpack_require__(22);
 var textureUtil = __webpack_require__(96);
 
-Shader.import(__webpack_require__(325));
+Shader.import(__webpack_require__(328));
 
 function attachTextureToSlot(gl, shader, symbol, texture, slot) {
     shader.setUniform(gl, '1i', symbol, slot);
@@ -68249,14 +68380,14 @@ NormalPass.prototype.dispose = function (gl) {
 module.exports = NormalPass;
 
 /***/ }),
-/* 303 */
+/* 306 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.ssao.estimate\n\nuniform sampler2D depthTex;\n\nuniform sampler2D normalTex;\n\nuniform sampler2D noiseTex;\n\nuniform vec2 depthTexSize;\n\nuniform vec2 noiseTexSize;\n\nuniform mat4 projection;\n\nuniform mat4 projectionInv;\n\nuniform mat4 viewInverseTranspose;\n\nuniform vec3 kernel[KERNEL_SIZE];\n\nuniform float radius : 1;\n\nuniform float power : 1;\n\nuniform float bias: 1e-2;\n\nuniform float intensity: 1.0;\n\nvarying vec2 v_Texcoord;\n\nfloat ssaoEstimator(in vec3 originPos, in mat3 kernelBasis) {\n    float occlusion = 0.0;\n\n    for (int i = 0; i < KERNEL_SIZE; i++) {\n        vec3 samplePos = kernel[i];\n#ifdef NORMALTEX_ENABLED\n        samplePos = kernelBasis * samplePos;\n#endif\n        samplePos = samplePos * radius + originPos;\n\n        vec4 texCoord = projection * vec4(samplePos, 1.0);\n        texCoord.xy /= texCoord.w;\n\n        vec4 depthTexel = texture2D(depthTex, texCoord.xy * 0.5 + 0.5);\n\n        float sampleDepth = depthTexel.r * 2.0 - 1.0;\n\n        sampleDepth = projection[3][2] / (sampleDepth * projection[2][3] - projection[2][2]);\n\n        float rangeCheck = smoothstep(0.0, 1.0, radius / abs(originPos.z - sampleDepth));\n        occlusion += rangeCheck * step(samplePos.z, sampleDepth - bias);\n    }\n#ifdef NORMALTEX_ENABLED\n    occlusion = 1.0 - occlusion / float(KERNEL_SIZE);\n#else\n    occlusion = 1.0 - clamp((occlusion / float(KERNEL_SIZE) - 0.6) * 2.5, 0.0, 1.0);\n#endif\n    return pow(occlusion, power);\n}\n\nvoid main()\n{\n\n    vec4 depthTexel = texture2D(depthTex, v_Texcoord);\n\n#ifdef NORMALTEX_ENABLED\n    vec4 tex = texture2D(normalTex, v_Texcoord);\n        if (tex.a == 0.0) {\n        gl_FragColor = vec4(1.0);\n        return;\n    }\n    vec3 N = tex.rgb * 2.0 - 1.0;\n    N = (viewInverseTranspose * vec4(N, 0.0)).xyz;\n\n    vec2 noiseTexCoord = depthTexSize / vec2(noiseTexSize) * v_Texcoord;\n    vec3 rvec = texture2D(noiseTex, noiseTexCoord).rgb * 2.0 - 1.0;\n        vec3 T = normalize(rvec - N * dot(rvec, N));\n        vec3 BT = normalize(cross(N, T));\n    mat3 kernelBasis = mat3(T, BT, N);\n#else\n    if (depthTexel.r > 0.99999) {\n        gl_FragColor = vec4(1.0);\n        return;\n    }\n    mat3 kernelBasis;\n#endif\n\n    float z = depthTexel.r * 2.0 - 1.0;\n\n    vec4 projectedPos = vec4(v_Texcoord * 2.0 - 1.0, z, 1.0);\n    vec4 p4 = projectionInv * projectedPos;\n\n    vec3 position = p4.xyz / p4.w;\n\n    float ao = ssaoEstimator(position, kernelBasis);\n    ao = clamp(1.0 - (1.0 - ao) * intensity, 0.0, 1.0);\n    gl_FragColor = vec4(vec3(ao), 1.0);\n}\n\n@end\n\n\n@export ecgl.ssao.blur\n\nuniform sampler2D ssaoTexture;\n\nuniform vec2 textureSize;\n\nvarying vec2 v_Texcoord;\n\nvoid main ()\n{\n\n    vec2 texelSize = 1.0 / textureSize;\n\n    float ao = 0.0;\n    vec2 hlim = vec2(float(-BLUR_SIZE) * 0.5 + 0.5);\n    float centerAo = texture2D(ssaoTexture, v_Texcoord).r;\n    float weightAll = 0.0;\n    float boxWeight = 1.0 / float(BLUR_SIZE) * float(BLUR_SIZE);\n    for (int x = 0; x < BLUR_SIZE; x++) {\n        for (int y = 0; y < BLUR_SIZE; y++) {\n            vec2 coord = (vec2(float(x), float(y)) + hlim) * texelSize + v_Texcoord;\n            float sampleAo = texture2D(ssaoTexture, coord).r;\n                                    float closeness = 1.0 - distance(sampleAo, centerAo) / sqrt(3.0);\n            float weight = boxWeight * closeness;\n            ao += weight * sampleAo;\n            weightAll += weight;\n        }\n    }\n\n    gl_FragColor = vec4(vec3(clamp(ao / weightAll, 0.0, 1.0)), 1.0);\n}\n@end";
 
 
 /***/ }),
-/* 304 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Matrix4 = __webpack_require__(24);
@@ -68268,7 +68399,7 @@ var Shader = __webpack_require__(22);
 var FrameBuffer = __webpack_require__(28);
 var halton = __webpack_require__(103);
 
-Shader.import(__webpack_require__(303));
+Shader.import(__webpack_require__(306));
 
 function generateNoiseData(size) {
     var data = new Uint8Array(size * size * 4);
@@ -68472,7 +68603,7 @@ SSAOPass.prototype.dispose = function (gl) {
 module.exports = SSAOPass;
 
 /***/ }),
-/* 305 */
+/* 308 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Temporal Super Sample for static Scene
@@ -68638,7 +68769,7 @@ TemporalSuperSampling.prototype = {
 module.exports = TemporalSuperSampling;
 
 /***/ }),
-/* 306 */
+/* 309 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -69304,14 +69435,14 @@ module.exports = {
 };
 
 /***/ }),
-/* 307 */
+/* 310 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.edge\n\nuniform sampler2D texture;\n\nuniform sampler2D normalTexture;\nuniform sampler2D depthTexture;\n\nuniform mat4 projectionInv;\n\nuniform vec2 textureSize;\n\nuniform vec4 edgeColor: [0,0,0,0.8];\n\nvarying vec2 v_Texcoord;\n\nvec3 packColor(vec2 coord) {\n    float z = texture2D(depthTexture, coord).r * 2.0 - 1.0;\n    vec4 p = vec4(v_Texcoord * 2.0 - 1.0, z, 1.0);\n    vec4 p4 = projectionInv * p;\n\n    return vec3(\n        texture2D(normalTexture, coord).rg,\n        -p4.z / p4.w / 5.0\n    );\n}\n\nvoid main() {\n    vec2 cc = v_Texcoord;\n        vec3 center = packColor(cc);\n\n        float size = clamp(1.0 - (center.z - 10.0) / 100.0, 0.0, 1.0) * 0.5;\n    float dx = size / textureSize.x;\n    float dy = size / textureSize.y;\n\n    vec2 coord;\n        vec3 topLeft = packColor(cc+vec2(-dx, -dy));\n        vec3 top = packColor(cc+vec2(0.0, -dy));\n        vec3 topRight = packColor(cc+vec2(dx, -dy));\n        vec3 left = packColor(cc+vec2(-dx, 0.0));\n        vec3 right = packColor(cc+vec2(dx, 0.0));\n        vec3 bottomLeft = packColor(cc+vec2(-dx, dy));\n        vec3 bottom = packColor(cc+vec2(0.0, dy));\n        vec3 bottomRight = packColor(cc+vec2(dx, dy));\n\n    vec3 v = -topLeft-2.0*top-topRight+bottomLeft+2.0*bottom+bottomRight;\n    vec3 h = -bottomLeft-2.0*left-topLeft+bottomRight+2.0*right+topRight;\n\n    float edge = sqrt(dot(h, h) + dot(v, v));\n\n    edge = smoothstep(0.8, 1.0, edge);\n\n    gl_FragColor = mix(texture2D(texture, v_Texcoord), vec4(edgeColor.rgb, 1.0), edgeColor.a * edge);\n}\n@end";
 
 
 /***/ }),
-/* 308 */
+/* 311 */
 /***/ (function(module, exports) {
 
 // Based on https://bl.ocks.org/mbostock/19168c663618b707158
@@ -69352,7 +69483,7 @@ module.exports = [
 ];
 
 /***/ }),
-/* 309 */
+/* 312 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -69392,7 +69523,7 @@ module.exports = function (option) {
 };
 
 /***/ }),
-/* 310 */
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -69574,7 +69705,7 @@ EChartsSurface.prototype = {
 module.exports = EChartsSurface;
 
 /***/ }),
-/* 311 */
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -69776,10 +69907,10 @@ var Roam2DControl = Base.extend(function () {
 module.exports = Roam2DControl;
 
 /***/ }),
-/* 312 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Animator = __webpack_require__(235);
+var Animator = __webpack_require__(238);
 
 var animatableMixin = {
 
@@ -69874,7 +70005,7 @@ var animatableMixin = {
 module.exports = animatableMixin;
 
 /***/ }),
-/* 313 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70499,7 +70630,7 @@ function signedArea(data, start, end, dim) {
 }
 
 /***/ }),
-/* 314 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -70895,7 +71026,7 @@ echarts.util.defaults(BarsGeometry.prototype, trianglesSortMixin);
 module.exports = BarsGeometry;
 
 /***/ }),
-/* 315 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -71313,7 +71444,7 @@ echarts.util.defaults(LinesGeometry.prototype, dynamicConvertMixin);
 module.exports = LinesGeometry;
 
 /***/ }),
-/* 316 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -71425,7 +71556,7 @@ echarts.util.defaults(QuadsGeometry.prototype, dynamicConvertMixin);
 module.exports = QuadsGeometry;
 
 /***/ }),
-/* 317 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -71568,7 +71699,7 @@ echarts.util.defaults(SpritesGeometry.prototype, dynamicConvertMixin);
 module.exports = SpritesGeometry;
 
 /***/ }),
-/* 318 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var vec3 = __webpack_require__(4).vec3;
@@ -71667,70 +71798,70 @@ module.exports = {
 };
 
 /***/ }),
-/* 319 */
+/* 322 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.color.vertex\n\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\n\n@import ecgl.common.uvUniforms\n\nattribute vec2 texcoord : TEXCOORD_0;\nattribute vec3 position: POSITION;\n\n@import ecgl.common.wireframe.vertexHeader\n\n#ifdef VERTEX_COLOR\nattribute vec4 a_Color : COLOR;\nvarying vec4 v_Color;\n#endif\n\n#ifdef VERTEX_ANIMATION\nattribute vec3 prevPosition;\nuniform float percent : 1.0;\n#endif\n\nvarying vec2 v_Texcoord;\n\nvoid main()\n{\n#ifdef VERTEX_ANIMATION\n    vec3 pos = mix(prevPosition, position, percent);\n#else\n    vec3 pos = position;\n#endif\n\n    gl_Position = worldViewProjection * vec4(pos, 1.0);\n    v_Texcoord = texcoord * uvRepeat + uvOffset;\n\n#ifdef VERTEX_COLOR\n    v_Color = a_Color;\n#endif\n\n    @import ecgl.common.wireframe.vertexMain\n\n}\n\n@end\n\n@export ecgl.color.fragment\n\n#define LAYER_DIFFUSEMAP_COUNT 0\n#define LAYER_EMISSIVEMAP_COUNT 0\n\nuniform sampler2D diffuseMap;\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\n\n#ifdef VERTEX_COLOR\nvarying vec4 v_Color;\n#endif\n\n@import ecgl.common.layers.header\n\nvarying vec2 v_Texcoord;\n\n@import ecgl.common.wireframe.fragmentHeader\n\n@import qtek.util.srgb\n\nvoid main()\n{\n#ifdef SRGB_DECODE\n    gl_FragColor = sRGBToLinear(color);\n#else\n    gl_FragColor = color;\n#endif\n\n#ifdef VERTEX_COLOR\n    gl_FragColor *= v_Color;\n#endif\n\n    vec4 albedoTexel = vec4(1.0);\n#ifdef DIFFUSEMAP_ENABLED\n    albedoTexel = texture2D(diffuseMap, v_Texcoord);\n    #ifdef SRGB_DECODE\n    albedoTexel = sRGBToLinear(albedoTexel);\n    #endif\n#endif\n\n    @import ecgl.common.diffuseLayer.main\n\n    gl_FragColor *= albedoTexel;\n\n    @import ecgl.common.emissiveLayer.main\n\n    @import ecgl.common.wireframe.fragmentMain\n\n}\n@end";
 
 
 /***/ }),
-/* 320 */
+/* 323 */
 /***/ (function(module, exports) {
 
 module.exports = "\n@export ecgl.common.transformUniforms\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nuniform mat4 worldInverseTranspose : WORLDINVERSETRANSPOSE;\nuniform mat4 world : WORLD;\n@end\n\n@export ecgl.common.attributes\nattribute vec3 position : POSITION;\nattribute vec2 texcoord : TEXCOORD_0;\nattribute vec3 normal : NORMAL;\n@end\n\n@export ecgl.common.uvUniforms\nuniform vec2 uvRepeat : [1.0, 1.0];\nuniform vec2 uvOffset : [0.0, 0.0];\n@end\n\n\n@export ecgl.common.wireframe.vertexHeader\n\n#ifdef WIREFRAME_QUAD\nattribute vec4 barycentric;\nvarying vec4 v_Barycentric;\n#elif defined(WIREFRAME_TRIANGLE)\nattribute vec3 barycentric;\nvarying vec3 v_Barycentric;\n#endif\n\n@end\n\n@export ecgl.common.wireframe.vertexMain\n\n#if defined(WIREFRAME_QUAD) || defined(WIREFRAME_TRIANGLE)\n    v_Barycentric = barycentric;\n#endif\n\n@end\n\n\n@export ecgl.common.wireframe.fragmentHeader\n\nuniform float wireframeLineWidth : 1;\nuniform vec4 wireframeLineColor: [0, 0, 0, 0.5];\n\n#ifdef WIREFRAME_QUAD\nvarying vec4 v_Barycentric;\nfloat edgeFactor () {\n    vec4 d = fwidth(v_Barycentric);\n    vec4 a4 = smoothstep(vec4(0.0), d * wireframeLineWidth, v_Barycentric);\n    return min(min(min(a4.x, a4.y), a4.z), a4.w);\n}\n#elif defined(WIREFRAME_TRIANGLE)\nvarying vec3 v_Barycentric;\nfloat edgeFactor () {\n    vec3 d = fwidth(v_Barycentric);\n    vec3 a3 = smoothstep(vec3(0.0), d * wireframeLineWidth, v_Barycentric);\n    return min(min(a3.x, a3.y), a3.z);\n}\n#endif\n\n@end\n\n\n@export ecgl.common.wireframe.fragmentMain\n\n#if defined(WIREFRAME_QUAD) || defined(WIREFRAME_TRIANGLE)\n    if (wireframeLineWidth > 0.) {\n        vec4 lineColor = wireframeLineColor;\n#ifdef SRGB_DECODE\n        lineColor = sRGBToLinear(lineColor);\n#endif\n\n        gl_FragColor.rgb = mix(gl_FragColor.rgb, lineColor.rgb, (1.0 - edgeFactor()) * lineColor.a);\n    }\n#endif\n@end\n\n\n\n\n@export ecgl.common.bumpMap.header\n\n#ifdef BUMPMAP_ENABLED\nuniform sampler2D bumpMap;\nuniform float bumpScale : 1.0;\n\n\nvec3 bumpNormal(vec3 surfPos, vec3 surfNormal, vec3 baseNormal)\n{\n    vec2 dSTdx = dFdx(v_Texcoord);\n    vec2 dSTdy = dFdy(v_Texcoord);\n\n    float Hll = bumpScale * texture2D(bumpMap, v_Texcoord).x;\n    float dHx = bumpScale * texture2D(bumpMap, v_Texcoord + dSTdx).x - Hll;\n    float dHy = bumpScale * texture2D(bumpMap, v_Texcoord + dSTdy).x - Hll;\n\n    vec3 vSigmaX = dFdx(surfPos);\n    vec3 vSigmaY = dFdy(surfPos);\n    vec3 vN = surfNormal;\n\n    vec3 R1 = cross(vSigmaY, vN);\n    vec3 R2 = cross(vN, vSigmaX);\n\n    float fDet = dot(vSigmaX, R1);\n\n    vec3 vGrad = sign(fDet) * (dHx * R1 + dHy * R2);\n    return normalize(abs(fDet) * baseNormal - vGrad);\n\n}\n#endif\n\n@end\n\n@export ecgl.common.normalMap.vertexHeader\n\n#ifdef NORMALMAP_ENABLED\nattribute vec4 tangent : TANGENT;\nvarying vec3 v_Tangent;\nvarying vec3 v_Bitangent;\n#endif\n\n@end\n\n@export ecgl.common.normalMap.vertexMain\n\n#ifdef NORMALMAP_ENABLED\n    if (dot(tangent, tangent) > 0.0) {\n        v_Tangent = normalize((worldInverseTranspose * vec4(tangent.xyz, 0.0)).xyz);\n        v_Bitangent = normalize(cross(v_Normal, v_Tangent) * tangent.w);\n    }\n#endif\n\n@end\n\n\n@export ecgl.common.normalMap.fragmentHeader\n\n#ifdef NORMALMAP_ENABLED\nuniform sampler2D normalMap;\nvarying vec3 v_Tangent;\nvarying vec3 v_Bitangent;\n#endif\n\n@end\n\n@export ecgl.common.normalMap.fragmentMain\n#ifdef NORMALMAP_ENABLED\n    if (dot(v_Tangent, v_Tangent) > 0.0) {\n        vec3 normalTexel = texture2D(normalMap, v_Texcoord).xyz;\n        if (dot(normalTexel, normalTexel) > 0.0) {             N = normalTexel * 2.0 - 1.0;\n            mat3 tbn = mat3(v_Tangent, v_Bitangent, v_Normal);\n            N = normalize(tbn * N);\n        }\n    }\n#endif\n@end\n\n\n\n@export ecgl.common.vertexAnimation.header\n\n#ifdef VERTEX_ANIMATION\nattribute vec3 prevPosition;\nattribute vec3 prevNormal;\nuniform float percent;\n#endif\n\n@end\n\n@export ecgl.common.vertexAnimation.main\n\n#ifdef VERTEX_ANIMATION\n    vec3 pos = mix(prevPosition, position, percent);\n    vec3 norm = mix(prevNormal, normal, percent);\n#else\n    vec3 pos = position;\n    vec3 norm = normal;\n#endif\n\n@end\n\n\n@export ecgl.common.ssaoMap.header\n#ifdef SSAOMAP_ENABLED\nuniform sampler2D ssaoMap;\nuniform vec4 viewport : VIEWPORT;\n#endif\n@end\n\n@export ecgl.common.ssaoMap.main\n    float ao = 1.0;\n#ifdef SSAOMAP_ENABLED\n    ao = texture2D(ssaoMap, (gl_FragCoord.xy - viewport.xy) / viewport.zw).r;\n#endif\n@end\n\n\n\n\n@export ecgl.common.diffuseLayer.header\n\n#if (LAYER_DIFFUSEMAP_COUNT > 0)\nuniform float layerDiffuseIntensity[LAYER_DIFFUSEMAP_COUNT];\nuniform sampler2D layerDiffuseMap[LAYER_DIFFUSEMAP_COUNT];\n#endif\n\n@end\n\n@export ecgl.common.emissiveLayer.header\n\n#if (LAYER_EMISSIVEMAP_COUNT > 0)\nuniform float layerEmissionIntensity[LAYER_EMISSIVEMAP_COUNT];\nuniform sampler2D layerEmissiveMap[LAYER_EMISSIVEMAP_COUNT];\n#endif\n\n@end\n\n@export ecgl.common.layers.header\n@import ecgl.common.diffuseLayer.header\n@import ecgl.common.emissiveLayer.header\n@end\n\n@export ecgl.common.diffuseLayer.main\n\n#if (LAYER_DIFFUSEMAP_COUNT > 0)\n    for (int _idx_ = 0; _idx_ < LAYER_DIFFUSEMAP_COUNT; _idx_++) {{\n        float intensity = layerDiffuseIntensity[_idx_];\n        vec4 texel2 = texture2D(layerDiffuseMap[_idx_], v_Texcoord);\n        #ifdef SRGB_DECODE\n        texel2 = sRGBToLinear(texel2);\n        #endif\n                albedoTexel.rgb = mix(albedoTexel.rgb, texel2.rgb * intensity, texel2.a);\n        albedoTexel.a = texel2.a + (1.0 - texel2.a) * albedoTexel.a;\n    }}\n#endif\n\n@end\n\n@export ecgl.common.emissiveLayer.main\n\n#if (LAYER_EMISSIVEMAP_COUNT > 0)\n    for (int _idx_ = 0; _idx_ < LAYER_EMISSIVEMAP_COUNT; _idx_++)\n    {{\n                vec4 texel2 = texture2D(layerEmissiveMap[_idx_], v_Texcoord) * layerEmissionIntensity[_idx_];\n        float intensity = layerEmissionIntensity[_idx_];\n        gl_FragColor.rgb += texel2.rgb * texel2.a * intensity;\n    }}\n#endif\n\n@end\n";
 
 
 /***/ }),
-/* 321 */
+/* 324 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.hatching.vertex\n\n@import ecgl.realistic.vertex\n\n@end\n\n\n@export ecgl.hatching.fragment\n\nvarying vec2 v_Texcoord;\nvarying vec3 v_Normal;\nvarying vec3 v_WorldPosition;\n\nuniform vec4 color : [0.0, 0.0, 0.0, 1.0];\nuniform vec4 paperColor : [1.0, 1.0, 1.0, 1.0];\n\nuniform mat4 viewInverse : VIEWINVERSE;\n\n#ifdef AMBIENT_LIGHT_COUNT\n@import qtek.header.ambient_light\n#endif\n#ifdef AMBIENT_SH_LIGHT_COUNT\n@import qtek.header.ambient_sh_light\n#endif\n\n#ifdef DIRECTIONAL_LIGHT_COUNT\n@import qtek.header.directional_light\n#endif\n\n#ifdef VERTEX_COLOR\nvarying vec4 v_Color;\n#endif\n\n\n@import ecgl.common.ssaoMap.header\n\n@import ecgl.common.bumpMap.header\n\n@import qtek.util.srgb\n\n@import ecgl.common.wireframe.fragmentHeader\n\n@import qtek.plugin.compute_shadow_map\n\nuniform sampler2D hatch1;\nuniform sampler2D hatch2;\nuniform sampler2D hatch3;\nuniform sampler2D hatch4;\nuniform sampler2D hatch5;\nuniform sampler2D hatch6;\n\nfloat shade(in float tone) {\n    vec4 c = vec4(1. ,1., 1., 1.);\n    float step = 1. / 6.;\n    if (tone <= step / 2.0) {\n        c = mix(vec4(0.), texture2D(hatch6, v_Texcoord), 12. * tone);\n    }\n    else if (tone <= step) {\n        c = mix(texture2D(hatch6, v_Texcoord), texture2D(hatch5, v_Texcoord), 6. * tone);\n    }\n    if(tone > step && tone <= 2. * step){\n        c = mix(texture2D(hatch5, v_Texcoord), texture2D(hatch4, v_Texcoord) , 6. * (tone - step));\n    }\n    if(tone > 2. * step && tone <= 3. * step){\n        c = mix(texture2D(hatch4, v_Texcoord), texture2D(hatch3, v_Texcoord), 6. * (tone - 2. * step));\n    }\n    if(tone > 3. * step && tone <= 4. * step){\n        c = mix(texture2D(hatch3, v_Texcoord), texture2D(hatch2, v_Texcoord), 6. * (tone - 3. * step));\n    }\n    if(tone > 4. * step && tone <= 5. * step){\n        c = mix(texture2D(hatch2, v_Texcoord), texture2D(hatch1, v_Texcoord), 6. * (tone - 4. * step));\n    }\n    if(tone > 5. * step){\n        c = mix(texture2D(hatch1, v_Texcoord), vec4(1.), 6. * (tone - 5. * step));\n    }\n\n    return c.r;\n}\n\nconst vec3 w = vec3(0.2125, 0.7154, 0.0721);\n\nvoid main()\n{\n#ifdef SRGB_DECODE\n    vec4 inkColor = sRGBToLinear(color);\n#else\n    vec4 inkColor = color;\n#endif\n\n#ifdef VERTEX_COLOR\n        #ifdef SRGB_DECODE\n    inkColor *= sRGBToLinear(v_Color);\n    #else\n    inkColor *= v_Color;\n    #endif\n#endif\n\n    vec3 N = v_Normal;\n#ifdef DOUBLE_SIDE\n    vec3 eyePos = viewInverse[3].xyz;\n    vec3 V = normalize(eyePos - v_WorldPosition);\n\n    if (dot(N, V) < 0.0) {\n        N = -N;\n    }\n#endif\n\n    float tone = 0.0;\n\n    float ambientFactor = 1.0;\n\n#ifdef BUMPMAP_ENABLED\n    N = bumpNormal(v_WorldPosition, v_Normal, N);\n        ambientFactor = dot(v_Normal, N);\n#endif\n\n    @import ecgl.common.ssaoMap.main\n\n#ifdef AMBIENT_LIGHT_COUNT\n    for(int i = 0; i < AMBIENT_LIGHT_COUNT; i++)\n    {\n                        tone += dot(ambientLightColor[i], w) * ambientFactor * ao;\n    }\n#endif\n#ifdef AMBIENT_SH_LIGHT_COUNT\n    for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\n    {{\n        tone += dot(calcAmbientSHLight(_idx_, N) * ambientSHLightColor[_idx_], w) * ao;\n    }}\n#endif\n#ifdef DIRECTIONAL_LIGHT_COUNT\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\n    float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\n    if(shadowEnabled)\n    {\n        computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\n    }\n#endif\n    for(int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++)\n    {\n        vec3 lightDirection = -directionalLightDirection[i];\n        float lightTone = dot(directionalLightColor[i], w);\n\n        float shadowContrib = 1.0;\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\n        if (shadowEnabled)\n        {\n            shadowContrib = shadowContribsDir[i];\n        }\n#endif\n\n        float ndl = dot(N, normalize(lightDirection)) * shadowContrib;\n\n        tone += lightTone * clamp(ndl, 0.0, 1.0);\n    }\n#endif\n\n    gl_FragColor = mix(inkColor, paperColor, shade(clamp(tone, 0.0, 1.0)));\n    }\n@end\n";
 
 
 /***/ }),
-/* 322 */
+/* 325 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.labels3D.vertex\n\nattribute vec3 position: POSITION;\nattribute vec2 texcoord: TEXCOORD_0;\nattribute vec2 offset;\n#ifdef VERTEX_COLOR\nattribute vec4 a_Color : COLOR;\nvarying vec4 v_Color;\n#endif\n\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nuniform vec4 viewport : VIEWPORT;\n\nvarying vec2 v_Texcoord;\n\nvoid main()\n{\n    vec4 proj = worldViewProjection * vec4(position, 1.0);\n\n    vec2 screen = (proj.xy / abs(proj.w) + 1.0) * 0.5 * viewport.zw;\n\n    screen += offset;\n\n    proj.xy = (screen / viewport.zw - 0.5) * 2.0 * abs(proj.w);\n    gl_Position = proj;\n#ifdef VERTEX_COLOR\n    v_Color = a_Color;\n#endif\n    v_Texcoord = texcoord;\n\n    gl_PointSize = 10.0;\n}\n@end\n\n\n@export ecgl.labels3D.fragment\n\nuniform vec3 color : [1.0, 1.0, 1.0];\nuniform float alpha : 1.0;\nuniform sampler2D textureAtlas;\nuniform vec2 uvScale: [1.0, 1.0];\n\n#ifdef VERTEX_COLOR\nvarying vec4 v_Color;\n#endif\nvarying float v_Miter;\n\nvarying vec2 v_Texcoord;\n\nvoid main()\n{\n    gl_FragColor = vec4(color, alpha) * texture2D(textureAtlas, v_Texcoord * uvScale);\n#ifdef VERTEX_COLOR\n    gl_FragColor *= v_Color;\n#endif\n}\n\n@end";
 
 
 /***/ }),
-/* 323 */
+/* 326 */
 /***/ (function(module, exports) {
 
 module.exports = "/**\n * http: */\n\n@export ecgl.lambert.vertex\n\n@import ecgl.common.transformUniforms\n\n@import ecgl.common.uvUniforms\n\n@import ecgl.common.attributes\n\n@import ecgl.common.wireframe.vertexHeader\n\n#ifdef VERTEX_COLOR\nattribute vec4 a_Color : COLOR;\nvarying vec4 v_Color;\n#endif\n\n\n@import ecgl.common.vertexAnimation.header\n\nvarying vec2 v_Texcoord;\n\nvarying vec3 v_Normal;\nvarying vec3 v_WorldPosition;\n\nvoid main()\n{\n    v_Texcoord = texcoord * uvRepeat + uvOffset;\n\n\n    @import ecgl.common.vertexAnimation.main\n\n\n    gl_Position = worldViewProjection * vec4(pos, 1.0);\n\n    v_Normal = normalize((worldInverseTranspose * vec4(norm, 0.0)).xyz);\n    v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\n\n#ifdef VERTEX_COLOR\n    v_Color = a_Color;\n#endif\n\n    @import ecgl.common.wireframe.vertexMain\n}\n\n@end\n\n\n@export ecgl.lambert.fragment\n\n#define LAYER_DIFFUSEMAP_COUNT 0\n#define LAYER_EMISSIVEMAP_COUNT 0\n\nvarying vec2 v_Texcoord;\n\nvarying vec3 v_Normal;\nvarying vec3 v_WorldPosition;\n\n#ifdef DIFFUSEMAP_ENABLED\nuniform sampler2D diffuseMap;\n#endif\n\n@import ecgl.common.layers.header\n\nuniform float emissionIntensity: 1.0;\n\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\n\nuniform mat4 viewInverse : VIEWINVERSE;\n\n#ifdef AMBIENT_LIGHT_COUNT\n@import qtek.header.ambient_light\n#endif\n#ifdef AMBIENT_SH_LIGHT_COUNT\n@import qtek.header.ambient_sh_light\n#endif\n\n#ifdef DIRECTIONAL_LIGHT_COUNT\n@import qtek.header.directional_light\n#endif\n\n#ifdef VERTEX_COLOR\nvarying vec4 v_Color;\n#endif\n\n\n@import ecgl.common.ssaoMap.header\n\n@import ecgl.common.bumpMap.header\n\n@import qtek.util.srgb\n\n@import ecgl.common.wireframe.fragmentHeader\n\n@import qtek.plugin.compute_shadow_map\n\nvoid main()\n{\n#ifdef SRGB_DECODE\n    gl_FragColor = sRGBToLinear(color);\n#else\n    gl_FragColor = color;\n#endif\n\n#ifdef VERTEX_COLOR\n        #ifdef SRGB_DECODE\n    gl_FragColor *= sRGBToLinear(v_Color);\n    #else\n    gl_FragColor *= v_Color;\n    #endif\n#endif\n\n    vec4 albedoTexel = vec4(1.0);\n#ifdef DIFFUSEMAP_ENABLED\n    albedoTexel = texture2D(diffuseMap, v_Texcoord);\n    #ifdef SRGB_DECODE\n    albedoTexel = sRGBToLinear(albedoTexel);\n    #endif\n#endif\n\n    @import ecgl.common.diffuseLayer.main\n\n    gl_FragColor *= albedoTexel;\n\n    vec3 N = v_Normal;\n#ifdef DOUBLE_SIDE\n    vec3 eyePos = viewInverse[3].xyz;\n    vec3 V = normalize(eyePos - v_WorldPosition);\n\n    if (dot(N, V) < 0.0) {\n        N = -N;\n    }\n#endif\n\n    float ambientFactor = 1.0;\n\n#ifdef BUMPMAP_ENABLED\n    N = bumpNormal(v_WorldPosition, v_Normal, N);\n        ambientFactor = dot(v_Normal, N);\n#endif\n\n    vec3 diffuseColor = vec3(0.0, 0.0, 0.0);\n\n    @import ecgl.common.ssaoMap.main\n\n#ifdef AMBIENT_LIGHT_COUNT\n    for(int i = 0; i < AMBIENT_LIGHT_COUNT; i++)\n    {\n                        diffuseColor += ambientLightColor[i] * ambientFactor * ao;\n    }\n#endif\n#ifdef AMBIENT_SH_LIGHT_COUNT\n    for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\n    {{\n        diffuseColor += calcAmbientSHLight(_idx_, N) * ambientSHLightColor[_idx_] * ao;\n    }}\n#endif\n#ifdef DIRECTIONAL_LIGHT_COUNT\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\n    float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\n    if(shadowEnabled)\n    {\n        computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\n    }\n#endif\n    for(int i = 0; i < DIRECTIONAL_LIGHT_COUNT; i++)\n    {\n        vec3 lightDirection = -directionalLightDirection[i];\n        vec3 lightColor = directionalLightColor[i];\n\n        float shadowContrib = 1.0;\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\n        if (shadowEnabled)\n        {\n            shadowContrib = shadowContribsDir[i];\n        }\n#endif\n\n        float ndl = dot(N, normalize(lightDirection)) * shadowContrib;\n\n        diffuseColor += lightColor * clamp(ndl, 0.0, 1.0);\n    }\n#endif\n\n    gl_FragColor.rgb *= diffuseColor;\n\n    @import ecgl.common.emissiveLayer.main\n\n    @import ecgl.common.wireframe.fragmentMain\n}\n\n@end";
 
 
 /***/ }),
-/* 324 */
+/* 327 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.lines2D.vertex\n\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\n\nattribute vec2 position: POSITION;\nattribute vec4 a_Color : COLOR;\nvarying vec4 v_Color;\n\n#ifdef POSITIONTEXTURE_ENABLED\nuniform sampler2D positionTexture;\n#endif\n\nvoid main()\n{\n    gl_Position = worldViewProjection * vec4(position, -10.0, 1.0);\n\n    v_Color = a_Color;\n}\n\n@end\n\n@export ecgl.lines2D.fragment\n\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\n\nvarying vec4 v_Color;\n\nvoid main()\n{\n    gl_FragColor = color * v_Color;\n}\n@end\n\n\n@export ecgl.meshLines2D.vertex\n\nattribute vec2 position: POSITION;\nattribute vec2 normal;\nattribute float offset;\nattribute vec4 a_Color : COLOR;\n\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\nuniform vec4 viewport : VIEWPORT;\n\nvarying vec4 v_Color;\nvarying float v_Miter;\n\nvoid main()\n{\n    vec4 p2 = worldViewProjection * vec4(position + normal, -10.0, 1.0);\n    gl_Position = worldViewProjection * vec4(position, -10.0, 1.0);\n\n    p2.xy /= p2.w;\n    gl_Position.xy /= gl_Position.w;\n\n        vec2 N = normalize(p2.xy - gl_Position.xy);\n    gl_Position.xy += N * offset / viewport.zw * 2.0;\n\n    gl_Position.xy *= gl_Position.w;\n\n    v_Color = a_Color;\n}\n@end\n\n\n@export ecgl.meshLines2D.fragment\n\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\n\nvarying vec4 v_Color;\nvarying float v_Miter;\n\nvoid main()\n{\n        gl_FragColor = color * v_Color;\n}\n\n@end";
 
 
 /***/ }),
-/* 325 */
+/* 328 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.normal.vertex\n\n@import ecgl.common.transformUniforms\n\n@import ecgl.common.uvUniforms\n\n@import ecgl.common.attributes\n\nvarying vec2 v_Texcoord;\nvarying vec3 v_Normal;\nvarying vec3 v_WorldPosition;\n\n@import ecgl.common.normalMap.vertexHeader\n\n@import ecgl.common.vertexAnimation.header\n\nvoid main()\n{\n    @import ecgl.common.vertexAnimation.main\n\n    v_Texcoord = texcoord * uvRepeat + uvOffset;\n\n    v_Normal = normalize((worldInverseTranspose * vec4(normal, 0.0)).xyz);\n    v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\n\n    @import ecgl.common.normalMap.vertexMain\n\n    gl_Position = worldViewProjection * vec4(pos, 1.0);\n\n}\n\n\n@end\n\n\n@export ecgl.normal.fragment\n\nuniform bool useBumpMap;\nuniform bool doubleSide;\n\nvarying vec2 v_Texcoord;\nvarying vec3 v_Normal;\nvarying vec3 v_WorldPosition;\n\nuniform mat4 viewInverse : VIEWINVERSE;\n\n@import ecgl.common.normalMap.fragmentHeader\n@import ecgl.common.bumpMap.header\n\nvoid main()\n{\n    vec3 N = v_Normal;\n\n    @import ecgl.common.normalMap.fragmentMain\n\n    if (useBumpMap) {\n        N = bumpNormal(v_WorldPosition, v_Normal, N);\n    }\n\n    if (doubleSide) {\n        vec3 eyePos = viewInverse[3].xyz;\n        vec3 V = normalize(eyePos - v_WorldPosition);\n\n        if (dot(N, V) < 0.0) {\n            N = -N;\n        }\n    }\n\n    gl_FragColor.rgb = (N.xyz + 1.0) * 0.5;\n    gl_FragColor.a = 1.0;\n}\n@end";
 
 
 /***/ }),
-/* 326 */
+/* 329 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.realistic.vertex\n\n@import ecgl.common.transformUniforms\n\n@import ecgl.common.uvUniforms\n\n@import ecgl.common.attributes\n\n\n@import ecgl.common.wireframe.vertexHeader\n\n#ifdef VERTEX_COLOR\nattribute vec4 a_Color : COLOR;\nvarying vec4 v_Color;\n#endif\n\n@import ecgl.common.vertexAnimation.header\n\nvarying vec2 v_Texcoord;\n\nvarying vec3 v_Normal;\nvarying vec3 v_WorldPosition;\n\nvoid main()\n{\n    v_Texcoord = texcoord * uvRepeat + uvOffset;\n\n    @import ecgl.common.vertexAnimation.main\n\n    gl_Position = worldViewProjection * vec4(pos, 1.0);\n\n    v_Normal = normalize((worldInverseTranspose * vec4(norm, 0.0)).xyz);\n    v_WorldPosition = (world * vec4(pos, 1.0)).xyz;\n\n#ifdef VERTEX_COLOR\n    v_Color = a_Color;\n#endif\n\n    @import ecgl.common.wireframe.vertexMain\n\n}\n\n@end\n\n\n\n@export ecgl.realistic.fragment\n\n#define LAYER_DIFFUSEMAP_COUNT 0\n#define LAYER_EMISSIVEMAP_COUNT 0\n#define PI 3.14159265358979\n\n#ifdef VERTEX_COLOR\nvarying vec4 v_Color;\n#endif\n\nvarying vec2 v_Texcoord;\nvarying vec3 v_Normal;\nvarying vec3 v_WorldPosition;\n\n#ifdef DIFFUSEMAP_ENABLED\nuniform sampler2D diffuseMap;\n#endif\n\n@import ecgl.common.layers.header\n\nuniform float emissionIntensity: 1.0;\n\nuniform vec4 color : [1.0, 1.0, 1.0, 1.0];\n\nuniform float metalness : 0.0;\nuniform float roughness : 0.5;\n\nuniform mat4 viewInverse : VIEWINVERSE;\n\n#ifdef AMBIENT_LIGHT_COUNT\n@import qtek.header.ambient_light\n#endif\n\n#ifdef AMBIENT_SH_LIGHT_COUNT\n@import qtek.header.ambient_sh_light\n#endif\n\n#ifdef AMBIENT_CUBEMAP_LIGHT_COUNT\n@import qtek.header.ambient_cubemap_light\n#endif\n\n#ifdef DIRECTIONAL_LIGHT_COUNT\n@import qtek.header.directional_light\n#endif\n\n@import ecgl.common.ssaoMap.header\n\n@import ecgl.common.bumpMap.header\n\n@import qtek.util.srgb\n\n@import qtek.util.rgbm\n\n@import ecgl.common.wireframe.fragmentHeader\n\n@import qtek.plugin.compute_shadow_map\n\nvec3 F_Schlick(float ndv, vec3 spec) {\n    return spec + (1.0 - spec) * pow(1.0 - ndv, 5.0);\n}\n\nfloat D_Phong(float g, float ndh) {\n        float a = pow(8192.0, g);\n    return (a + 2.0) / 8.0 * pow(ndh, a);\n}\n\nvoid main()\n{\n    vec4 albedoColor = color;\n\n    vec3 eyePos = viewInverse[3].xyz;\n    vec3 V = normalize(eyePos - v_WorldPosition);\n#ifdef VERTEX_COLOR\n        #ifdef SRGB_DECODE\n    albedoColor *= sRGBToLinear(v_Color);\n    #else\n    albedoColor *= v_Color;\n    #endif\n#endif\n\n    vec4 albedoTexel = vec4(1.0);\n#ifdef DIFFUSEMAP_ENABLED\n    albedoTexel = texture2D(diffuseMap, v_Texcoord);\n    #ifdef SRGB_DECODE\n    albedoTexel = sRGBToLinear(albedoTexel);\n    #endif\n#endif\n\n    @import ecgl.common.diffuseLayer.main\n\n    albedoColor *= albedoTexel;\n\n    vec3 baseColor = albedoColor.rgb;\n    albedoColor.rgb = baseColor * (1.0 - metalness);\n    vec3 specFactor = mix(vec3(0.04), baseColor, metalness);\n\n    float g = 1.0 - roughness;\n\n    vec3 N = v_Normal;\n\n#ifdef DOUBLE_SIDE\n    if (dot(N, V) < 0.0) {\n        N = -N;\n    }\n#endif\n\n    float ambientFactor = 1.0;\n\n#ifdef BUMPMAP_ENABLED\n    N = bumpNormal(v_WorldPosition, v_Normal, N);\n        ambientFactor = dot(v_Normal, N);\n#endif\n\n    vec3 diffuseTerm = vec3(0.0);\n    vec3 specularTerm = vec3(0.0);\n\n    float ndv = clamp(dot(N, V), 0.0, 1.0);\n    vec3 fresnelTerm = F_Schlick(ndv, specFactor);\n\n    @import ecgl.common.ssaoMap.main\n\n#ifdef AMBIENT_LIGHT_COUNT\n    for(int _idx_ = 0; _idx_ < AMBIENT_LIGHT_COUNT; _idx_++)\n    {{\n                        diffuseTerm += ambientLightColor[_idx_] * ambientFactor * ao;\n    }}\n#endif\n\n#ifdef AMBIENT_SH_LIGHT_COUNT\n    for(int _idx_ = 0; _idx_ < AMBIENT_SH_LIGHT_COUNT; _idx_++)\n    {{\n        diffuseTerm += calcAmbientSHLight(_idx_, N) * ambientSHLightColor[_idx_] * ao;\n    }}\n#endif\n\n#ifdef DIRECTIONAL_LIGHT_COUNT\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\n    float shadowContribsDir[DIRECTIONAL_LIGHT_COUNT];\n    if(shadowEnabled)\n    {\n        computeShadowOfDirectionalLights(v_WorldPosition, shadowContribsDir);\n    }\n#endif\n    for(int _idx_ = 0; _idx_ < DIRECTIONAL_LIGHT_COUNT; _idx_++)\n    {{\n        vec3 L = -directionalLightDirection[_idx_];\n        vec3 lc = directionalLightColor[_idx_];\n\n        vec3 H = normalize(L + V);\n        float ndl = clamp(dot(N, normalize(L)), 0.0, 1.0);\n        float ndh = clamp(dot(N, H), 0.0, 1.0);\n\n        float shadowContrib = 1.0;\n#if defined(DIRECTIONAL_LIGHT_SHADOWMAP_COUNT)\n        if (shadowEnabled)\n        {\n            shadowContrib = shadowContribsDir[_idx_];\n        }\n#endif\n\n        vec3 li = lc * ndl * shadowContrib;\n\n        diffuseTerm += li;\n        specularTerm += li * fresnelTerm * D_Phong(g, ndh);\n    }}\n#endif\n\n\n#ifdef AMBIENT_CUBEMAP_LIGHT_COUNT\n    vec3 L = reflect(-V, N);\n    float rough2 = clamp(1.0 - g, 0.0, 1.0);\n        float bias2 = rough2 * 5.0;\n        vec2 brdfParam2 = texture2D(ambientCubemapLightBRDFLookup[0], vec2(rough2, ndv)).xy;\n    vec3 envWeight2 = specFactor * brdfParam2.x + brdfParam2.y;\n    vec3 envTexel2;\n    for(int _idx_ = 0; _idx_ < AMBIENT_CUBEMAP_LIGHT_COUNT; _idx_++)\n    {{\n        envTexel2 = RGBMDecode(textureCubeLodEXT(ambientCubemapLightCubemap[_idx_], L, bias2), 51.5);\n                specularTerm += ambientCubemapLightColor[_idx_] * envTexel2 * envWeight2 * ao;\n    }}\n#endif\n\n    gl_FragColor.rgb = albedoColor.rgb * diffuseTerm + specularTerm;\n    gl_FragColor.a = albedoColor.a;\n\n    #ifdef SRGB_ENCODE\n    gl_FragColor = linearTosRGB(gl_FragColor);\n    #endif\n\n    @import ecgl.common.emissiveLayer.main\n\n    @import ecgl.common.wireframe.fragmentMain\n}\n\n@end";
 
 
 /***/ }),
-/* 327 */
+/* 330 */
 /***/ (function(module, exports) {
 
 module.exports = "@export ecgl.sm.depth.vertex\n\nuniform mat4 worldViewProjection : WORLDVIEWPROJECTION;\n\nattribute vec3 position : POSITION;\n\n#ifdef VERTEX_ANIMATION\nattribute vec3 prevPosition;\nuniform float percent : 1.0;\n#endif\n\nvarying vec4 v_ViewPosition;\n\nvoid main(){\n\n#ifdef VERTEX_ANIMATION\n    vec3 pos = mix(prevPosition, position, percent);\n#else\n    vec3 pos = position;\n#endif\n\n    v_ViewPosition = worldViewProjection * vec4(pos, 1.0);\n    gl_Position = v_ViewPosition;\n\n}\n@end\n\n\n\n@export ecgl.sm.depth.fragment\n\n@import qtek.sm.depth.fragment\n\n@end";
 
 
 /***/ }),
-/* 328 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var echarts = __webpack_require__(1);
@@ -71917,7 +72048,7 @@ var spriteUtil = {
 module.exports = spriteUtil;
 
 /***/ }),
-/* 329 */
+/* 332 */
 /***/ (function(module, exports) {
 
 /*
@@ -72007,7 +72138,7 @@ SunCalc.getPosition = function (date, lat, lng) {
 module.exports = SunCalc;
 
 /***/ }),
-/* 330 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72033,7 +72164,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 331 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -72042,8 +72173,8 @@ module.exports = SunCalc;
 
     __webpack_require__(118);
 
-    __webpack_require__(332);
-    __webpack_require__(333);
+    __webpack_require__(335);
+    __webpack_require__(336);
 
     var barLayoutGrid = __webpack_require__(121);
     var echarts = __webpack_require__(1);
@@ -72063,7 +72194,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 332 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -72079,7 +72210,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 333 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72094,7 +72225,7 @@ module.exports = SunCalc;
 
     // FIXME
     // Just for compatible with ec2.
-    zrUtil.extend(__webpack_require__(10).prototype, __webpack_require__(336));
+    zrUtil.extend(__webpack_require__(10).prototype, __webpack_require__(339));
 
     var BarView = __webpack_require__(1).extendChartView({
 
@@ -72360,7 +72491,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 334 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -72410,7 +72541,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 335 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -73168,7 +73299,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 336 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -73202,23 +73333,23 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 337 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     var echarts = __webpack_require__(1);
 
-    __webpack_require__(338);
-    __webpack_require__(339);
+    __webpack_require__(341);
+    __webpack_require__(342);
 
-    echarts.registerVisual(__webpack_require__(341));
-    echarts.registerLayout(__webpack_require__(340));
+    echarts.registerVisual(__webpack_require__(344));
+    echarts.registerLayout(__webpack_require__(343));
 
 
 
 /***/ }),
-/* 338 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73295,7 +73426,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 339 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73351,7 +73482,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 340 */
+/* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -73553,7 +73684,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 341 */
+/* 344 */
 /***/ (function(module, exports) {
 
 
@@ -73592,27 +73723,27 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 342 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     var echarts = __webpack_require__(1);
 
-    __webpack_require__(343);
-    __webpack_require__(344);
+    __webpack_require__(346);
+    __webpack_require__(347);
 
     echarts.registerPreprocessor(
-        __webpack_require__(347)
+        __webpack_require__(350)
     );
 
-    echarts.registerVisual(__webpack_require__(346));
-    echarts.registerLayout(__webpack_require__(345));
+    echarts.registerVisual(__webpack_require__(349));
+    echarts.registerLayout(__webpack_require__(348));
 
 
 
 /***/ }),
-/* 343 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73702,7 +73833,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 344 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73762,7 +73893,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 345 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -73904,7 +74035,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 346 */
+/* 349 */
 /***/ (function(module, exports) {
 
 
@@ -73949,7 +74080,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 347 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -73972,7 +74103,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 348 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -74001,11 +74132,11 @@ module.exports = SunCalc;
      *     }}
      */
     var prepareCustoms = {
-        cartesian2d: __webpack_require__(525),
-        geo: __webpack_require__(529),
-        singleAxis: __webpack_require__(547),
-        polar: __webpack_require__(540),
-        calendar: __webpack_require__(521)
+        cartesian2d: __webpack_require__(528),
+        geo: __webpack_require__(532),
+        singleAxis: __webpack_require__(550),
+        polar: __webpack_require__(543),
+        calendar: __webpack_require__(524)
     };
 
     // ------
@@ -74420,7 +74551,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 349 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -74428,8 +74559,8 @@ module.exports = SunCalc;
     var zrUtil = __webpack_require__(0);
     var echarts = __webpack_require__(1);
 
-    __webpack_require__(350);
-    __webpack_require__(351);
+    __webpack_require__(353);
+    __webpack_require__(354);
 
     echarts.registerVisual(zrUtil.curry(
         __webpack_require__(31), 'effectScatter', 'circle', null
@@ -74440,7 +74571,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 350 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74514,13 +74645,13 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 351 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     var SymbolDraw = __webpack_require__(65);
-    var EffectSymbol = __webpack_require__(378);
+    var EffectSymbol = __webpack_require__(381);
 
     __webpack_require__(1).extendChartView({
 
@@ -74550,7 +74681,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 352 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -74558,17 +74689,17 @@ module.exports = SunCalc;
     var zrUtil = __webpack_require__(0);
     var echarts = __webpack_require__(1);
 
-    __webpack_require__(353);
-    __webpack_require__(354);
+    __webpack_require__(356);
+    __webpack_require__(357);
 
     echarts.registerVisual(zrUtil.curry(__webpack_require__(125), 'funnel'));
-    echarts.registerLayout(__webpack_require__(355));
+    echarts.registerLayout(__webpack_require__(358));
 
     echarts.registerProcessor(zrUtil.curry(__webpack_require__(89), 'funnel'));
 
 
 /***/ }),
-/* 353 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74687,7 +74818,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 354 */
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -74908,7 +75039,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 355 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -75090,16 +75221,16 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 356 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    __webpack_require__(357);
-    __webpack_require__(358);
+    __webpack_require__(360);
+    __webpack_require__(361);
 
 
 /***/ }),
-/* 357 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -75227,12 +75358,12 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 358 */
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
-    var PointerPath = __webpack_require__(359);
+    var PointerPath = __webpack_require__(362);
 
     var graphic = __webpack_require__(2);
     var numberUtil = __webpack_require__(3);
@@ -75661,7 +75792,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 359 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -75713,7 +75844,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 360 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -75721,31 +75852,31 @@ module.exports = SunCalc;
     var echarts = __webpack_require__(1);
     var zrUtil = __webpack_require__(0);
 
-    __webpack_require__(361);
-    __webpack_require__(362);
+    __webpack_require__(364);
+    __webpack_require__(365);
 
-    __webpack_require__(371);
+    __webpack_require__(374);
 
-    echarts.registerProcessor(__webpack_require__(364));
+    echarts.registerProcessor(__webpack_require__(367));
 
     echarts.registerVisual(zrUtil.curry(
         __webpack_require__(31), 'graph', 'circle', null
     ));
-    echarts.registerVisual(__webpack_require__(365));
     echarts.registerVisual(__webpack_require__(368));
+    echarts.registerVisual(__webpack_require__(371));
 
-    echarts.registerLayout(__webpack_require__(372));
-    echarts.registerLayout(__webpack_require__(366));
-    echarts.registerLayout(__webpack_require__(370));
+    echarts.registerLayout(__webpack_require__(375));
+    echarts.registerLayout(__webpack_require__(369));
+    echarts.registerLayout(__webpack_require__(373));
 
     // Graph view coordinate system
     echarts.registerCoordinateSystem('graphView', {
-        create: __webpack_require__(367)
+        create: __webpack_require__(370)
     });
 
 
 /***/ }),
-/* 361 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76020,7 +76151,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 362 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -76033,7 +76164,7 @@ module.exports = SunCalc;
     var cursorHelper = __webpack_require__(113);
 
     var graphic = __webpack_require__(2);
-    var adjustEdge = __webpack_require__(363);
+    var adjustEdge = __webpack_require__(366);
     var zrUtil = __webpack_require__(0);
 
     var nodeOpacityPath = ['itemStyle', 'normal', 'opacity'];
@@ -76373,7 +76504,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 363 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -76539,7 +76670,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 364 */
+/* 367 */
 /***/ (function(module, exports) {
 
 
@@ -76579,7 +76710,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 365 */
+/* 368 */
 /***/ (function(module, exports) {
 
 
@@ -76627,7 +76758,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 366 */
+/* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -76642,7 +76773,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 367 */
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -76723,7 +76854,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 368 */
+/* 371 */
 /***/ (function(module, exports) {
 
 
@@ -76781,7 +76912,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 369 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -76923,12 +77054,12 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 370 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
-    var forceHelper = __webpack_require__(369);
+    var forceHelper = __webpack_require__(372);
     var numberUtil = __webpack_require__(3);
     var simpleLayoutHelper = __webpack_require__(155);
     var circularLayoutHelper = __webpack_require__(153);
@@ -77062,7 +77193,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 371 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -77128,7 +77259,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 372 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -77176,17 +77307,17 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 373 */
+/* 376 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
-    __webpack_require__(375);
-    __webpack_require__(376);
+    __webpack_require__(378);
+    __webpack_require__(379);
 
 
 /***/ }),
-/* 374 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -77340,7 +77471,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 375 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -77383,13 +77514,13 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 376 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     var graphic = __webpack_require__(2);
-    var HeatmapLayer = __webpack_require__(374);
+    var HeatmapLayer = __webpack_require__(377);
     var zrUtil = __webpack_require__(0);
 
     function getIsInPiecewiseRange(dataExtent, pieceList, selected) {
@@ -77664,7 +77795,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 377 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -77780,7 +77911,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 378 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -78014,7 +78145,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 379 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // TODO Batch by color
@@ -78162,7 +78293,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 380 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // TODO Batch by color
@@ -78313,7 +78444,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 381 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -78370,7 +78501,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 382 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -78590,7 +78721,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 383 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -78599,8 +78730,8 @@ module.exports = SunCalc;
     var echarts = __webpack_require__(1);
     var PRIORITY = echarts.PRIORITY;
 
-    __webpack_require__(384);
-    __webpack_require__(385);
+    __webpack_require__(387);
+    __webpack_require__(388);
 
     echarts.registerVisual(zrUtil.curry(
         __webpack_require__(31), 'line', 'circle', 'line'
@@ -78611,7 +78742,7 @@ module.exports = SunCalc;
 
     // Down sample after filter
     echarts.registerProcessor(PRIORITY.PROCESSOR.STATISTIC, zrUtil.curry(
-        __webpack_require__(563), 'line'
+        __webpack_require__(566), 'line'
     ));
 
     // In case developer forget to include grid component
@@ -78619,7 +78750,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 384 */
+/* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78711,7 +78842,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 385 */
+/* 388 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78722,7 +78853,7 @@ module.exports = SunCalc;
     var zrUtil = __webpack_require__(0);
     var SymbolDraw = __webpack_require__(65);
     var Symbol = __webpack_require__(109);
-    var lineAnimationDiff = __webpack_require__(386);
+    var lineAnimationDiff = __webpack_require__(389);
     var graphic = __webpack_require__(2);
     var modelUtil = __webpack_require__(5);
     var polyHelper = __webpack_require__(160);
@@ -79420,7 +79551,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 386 */
+/* 389 */
 /***/ (function(module, exports) {
 
 
@@ -79634,25 +79765,25 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 387 */
+/* 390 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
-    __webpack_require__(388);
-    __webpack_require__(389);
+    __webpack_require__(391);
+    __webpack_require__(392);
 
     var echarts = __webpack_require__(1);
     echarts.registerLayout(
-        __webpack_require__(390)
+        __webpack_require__(393)
     );
     echarts.registerVisual(
-        __webpack_require__(391)
+        __webpack_require__(394)
     );
 
 
 /***/ }),
-/* 388 */
+/* 391 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79816,7 +79947,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 389 */
+/* 392 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -79825,8 +79956,8 @@ module.exports = SunCalc;
     var EffectLine = __webpack_require__(156);
     var Line = __webpack_require__(107);
     var Polyline = __webpack_require__(157);
-    var EffectPolyline = __webpack_require__(377);
-    var LargeLineDraw = __webpack_require__(379);
+    var EffectPolyline = __webpack_require__(380);
+    var LargeLineDraw = __webpack_require__(382);
 
     __webpack_require__(1).extendChartView({
 
@@ -79916,7 +80047,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 390 */
+/* 393 */
 /***/ (function(module, exports) {
 
 
@@ -79964,7 +80095,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 391 */
+/* 394 */
 /***/ (function(module, exports) {
 
 
@@ -80007,7 +80138,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 392 */
+/* 395 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -80015,21 +80146,21 @@ module.exports = SunCalc;
     var echarts = __webpack_require__(1);
     var PRIORITY = echarts.PRIORITY;
 
-    __webpack_require__(393);
+    __webpack_require__(396);
 
-    __webpack_require__(394);
+    __webpack_require__(397);
 
     __webpack_require__(149);
 
     __webpack_require__(88);
 
-    echarts.registerLayout(__webpack_require__(397));
+    echarts.registerLayout(__webpack_require__(400));
 
-    echarts.registerVisual(__webpack_require__(398));
+    echarts.registerVisual(__webpack_require__(401));
 
-    echarts.registerProcessor(PRIORITY.PROCESSOR.STATISTIC, __webpack_require__(396));
+    echarts.registerProcessor(PRIORITY.PROCESSOR.STATISTIC, __webpack_require__(399));
 
-    echarts.registerPreprocessor(__webpack_require__(395));
+    echarts.registerPreprocessor(__webpack_require__(398));
 
     __webpack_require__(148)('map', [{
         type: 'mapToggleSelect',
@@ -80047,7 +80178,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 393 */
+/* 396 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -80302,7 +80433,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 394 */
+/* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -80458,7 +80589,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 395 */
+/* 398 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -80483,7 +80614,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 396 */
+/* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -80572,7 +80703,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 397 */
+/* 400 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -80635,7 +80766,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 398 */
+/* 401 */
 /***/ (function(module, exports) {
 
 
@@ -80657,7 +80788,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 399 */
+/* 402 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -80666,15 +80797,15 @@ module.exports = SunCalc;
 
     __webpack_require__(176);
 
-    __webpack_require__(400);
-    __webpack_require__(401);
+    __webpack_require__(403);
+    __webpack_require__(404);
 
-    echarts.registerVisual(__webpack_require__(402));
+    echarts.registerVisual(__webpack_require__(405));
 
 
 
 /***/ }),
-/* 400 */
+/* 403 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -80839,7 +80970,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 401 */
+/* 404 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -81083,7 +81214,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 402 */
+/* 405 */
 /***/ (function(module, exports) {
 
 
@@ -81130,7 +81261,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 403 */
+/* 406 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -81139,8 +81270,8 @@ module.exports = SunCalc;
 
     __webpack_require__(118);
 
-    __webpack_require__(334);
-    __webpack_require__(335);
+    __webpack_require__(337);
+    __webpack_require__(338);
 
     var barLayoutGrid = __webpack_require__(121);
     var echarts = __webpack_require__(1);
@@ -81156,7 +81287,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 404 */
+/* 407 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -81164,8 +81295,8 @@ module.exports = SunCalc;
     var zrUtil = __webpack_require__(0);
     var echarts = __webpack_require__(1);
 
-    __webpack_require__(405);
-    __webpack_require__(406);
+    __webpack_require__(408);
+    __webpack_require__(409);
 
     __webpack_require__(148)('pie', [{
         type: 'pieToggleSelect',
@@ -81184,14 +81315,14 @@ module.exports = SunCalc;
     echarts.registerVisual(zrUtil.curry(__webpack_require__(125), 'pie'));
 
     echarts.registerLayout(zrUtil.curry(
-        __webpack_require__(408), 'pie'
+        __webpack_require__(411), 'pie'
     ));
 
     echarts.registerProcessor(zrUtil.curry(__webpack_require__(89), 'pie'));
 
 
 /***/ }),
-/* 405 */
+/* 408 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81342,7 +81473,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 406 */
+/* 409 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -81748,7 +81879,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 407 */
+/* 410 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81980,14 +82111,14 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 408 */
+/* 411 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     var numberUtil = __webpack_require__(3);
     var parsePercent = numberUtil.parsePercent;
-    var labelLayout = __webpack_require__(407);
+    var labelLayout = __webpack_require__(410);
     var zrUtil = __webpack_require__(0);
 
     var PI2 = Math.PI * 2;
@@ -82134,7 +82265,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 409 */
+/* 412 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -82143,26 +82274,26 @@ module.exports = SunCalc;
     var echarts = __webpack_require__(1);
 
     // Must use radar component
-    __webpack_require__(486);
+    __webpack_require__(489);
 
-    __webpack_require__(410);
-    __webpack_require__(411);
+    __webpack_require__(413);
+    __webpack_require__(414);
 
     echarts.registerVisual(zrUtil.curry(__webpack_require__(125), 'radar'));
     echarts.registerVisual(zrUtil.curry(
         __webpack_require__(31), 'radar', 'circle', null
     ));
-    echarts.registerLayout(__webpack_require__(413));
+    echarts.registerLayout(__webpack_require__(416));
 
     echarts.registerProcessor(
         zrUtil.curry(__webpack_require__(89), 'radar')
     );
 
-    echarts.registerPreprocessor(__webpack_require__(412));
+    echarts.registerPreprocessor(__webpack_require__(415));
 
 
 /***/ }),
-/* 410 */
+/* 413 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82244,7 +82375,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 411 */
+/* 414 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -82470,7 +82601,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 412 */
+/* 415 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Backward compat for radar chart in 2
@@ -82511,7 +82642,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 413 */
+/* 416 */
 /***/ (function(module, exports) {
 
 
@@ -82544,21 +82675,21 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 414 */
+/* 417 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     var echarts = __webpack_require__(1);
 
-    __webpack_require__(415);
-    __webpack_require__(416);
-    echarts.registerLayout(__webpack_require__(417));
-    echarts.registerVisual(__webpack_require__(418));
+    __webpack_require__(418);
+    __webpack_require__(419);
+    echarts.registerLayout(__webpack_require__(420));
+    echarts.registerVisual(__webpack_require__(421));
 
 
 /***/ }),
-/* 415 */
+/* 418 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -82695,7 +82826,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 416 */
+/* 419 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -82902,7 +83033,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 417 */
+/* 420 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -83278,7 +83409,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 418 */
+/* 421 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -83326,7 +83457,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 419 */
+/* 422 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -83334,8 +83465,8 @@ module.exports = SunCalc;
     var zrUtil = __webpack_require__(0);
     var echarts = __webpack_require__(1);
 
-    __webpack_require__(420);
-    __webpack_require__(421);
+    __webpack_require__(423);
+    __webpack_require__(424);
 
     echarts.registerVisual(zrUtil.curry(
         __webpack_require__(31), 'scatter', 'circle', null
@@ -83349,7 +83480,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 420 */
+/* 423 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83418,13 +83549,13 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 421 */
+/* 424 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     var SymbolDraw = __webpack_require__(65);
-    var LargeSymbolDraw = __webpack_require__(380);
+    var LargeSymbolDraw = __webpack_require__(383);
 
     __webpack_require__(1).extendChartView({
 
@@ -83467,7 +83598,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 422 */
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -83477,13 +83608,13 @@ module.exports = SunCalc;
 
     __webpack_require__(177);
 
-    __webpack_require__(423);
+    __webpack_require__(426);
 
-    __webpack_require__(424);
+    __webpack_require__(427);
 
-    echarts.registerLayout(__webpack_require__(425));
+    echarts.registerLayout(__webpack_require__(428));
 
-    echarts.registerVisual(__webpack_require__(426));
+    echarts.registerVisual(__webpack_require__(429));
 
     echarts.registerProcessor(
         zrUtil.curry(__webpack_require__(89), 'themeRiver')
@@ -83491,7 +83622,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 423 */
+/* 426 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83807,7 +83938,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 424 */
+/* 427 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -83991,7 +84122,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 425 */
+/* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -84140,7 +84271,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 426 */
+/* 429 */
 /***/ (function(module, exports) {
 
 /**
@@ -84166,24 +84297,24 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 427 */
+/* 430 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     var echarts = __webpack_require__(1);
 
-    __webpack_require__(429);
-    __webpack_require__(430);
-    __webpack_require__(431);
+    __webpack_require__(432);
+    __webpack_require__(433);
+    __webpack_require__(434);
 
-    echarts.registerVisual(__webpack_require__(433));
+    echarts.registerVisual(__webpack_require__(436));
 
-    echarts.registerLayout(__webpack_require__(432));
+    echarts.registerLayout(__webpack_require__(435));
 
 
 /***/ }),
-/* 428 */
+/* 431 */
 /***/ (function(module, exports, __webpack_require__) {
 
  
@@ -84359,13 +84490,13 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 429 */
+/* 432 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     var SeriesModel = __webpack_require__(17);
-    var Tree = __webpack_require__(549);
+    var Tree = __webpack_require__(552);
     var zrUtil = __webpack_require__(0);
     var Model = __webpack_require__(10);
     var formatUtil = __webpack_require__(8);
@@ -84710,7 +84841,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 430 */
+/* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
  
@@ -84719,11 +84850,11 @@ module.exports = SunCalc;
     var graphic = __webpack_require__(2);
     var DataDiffer = __webpack_require__(71);
     var helper = __webpack_require__(55);
-    var Breadcrumb = __webpack_require__(428);
+    var Breadcrumb = __webpack_require__(431);
     var RoamController = __webpack_require__(86);
     var BoundingRect = __webpack_require__(12);
     var matrix = __webpack_require__(29);
-    var animationUtil = __webpack_require__(567);
+    var animationUtil = __webpack_require__(570);
     var bind = zrUtil.bind;
     var Group = graphic.Group;
     var Rect = graphic.Rect;
@@ -85594,7 +85725,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 431 */
+/* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -85644,7 +85775,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 432 */
+/* 435 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -86204,7 +86335,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 433 */
+/* 436 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -86436,7 +86567,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 434 */
+/* 437 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86445,11 +86576,11 @@ module.exports = SunCalc;
 
     __webpack_require__(119);
 
-    __webpack_require__(436);
+    __webpack_require__(439);
 
 
 /***/ }),
-/* 435 */
+/* 438 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86459,11 +86590,11 @@ module.exports = SunCalc;
 
     __webpack_require__(187);
 
-    __webpack_require__(437);
+    __webpack_require__(440);
 
 
 /***/ }),
-/* 436 */
+/* 439 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -86702,7 +86833,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 437 */
+/* 440 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -86937,7 +87068,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 438 */
+/* 441 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -87126,7 +87257,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 439 */
+/* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87276,7 +87407,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 440 */
+/* 443 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -87399,7 +87530,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 441 */
+/* 444 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -87440,7 +87571,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 442 */
+/* 445 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -87545,7 +87676,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 443 */
+/* 446 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -87603,7 +87734,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 444 */
+/* 447 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87753,7 +87884,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 445 */
+/* 448 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -87885,7 +88016,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 446 */
+/* 449 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -88273,7 +88404,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 447 */
+/* 450 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -88282,20 +88413,20 @@ module.exports = SunCalc;
 
 
     __webpack_require__(1).registerPreprocessor(
-        __webpack_require__(451)
+        __webpack_require__(454)
     );
 
+    __webpack_require__(456);
+    __webpack_require__(451);
+    __webpack_require__(452);
     __webpack_require__(453);
-    __webpack_require__(448);
-    __webpack_require__(449);
-    __webpack_require__(450);
 
-    __webpack_require__(502);
+    __webpack_require__(505);
 
 
 
 /***/ }),
-/* 448 */
+/* 451 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -88447,7 +88578,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 449 */
+/* 452 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -88552,7 +88683,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 450 */
+/* 453 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -88607,7 +88738,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 451 */
+/* 454 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -88677,7 +88808,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 452 */
+/* 455 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -88809,7 +88940,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 453 */
+/* 456 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -88821,7 +88952,7 @@ module.exports = SunCalc;
     var visualSolution = __webpack_require__(92);
     var zrUtil = __webpack_require__(0);
     var BoundingRect = __webpack_require__(12);
-    var selector = __webpack_require__(452);
+    var selector = __webpack_require__(455);
     var throttle = __webpack_require__(57);
     var BrushTargetManager = __webpack_require__(170);
 
@@ -89140,7 +89271,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 454 */
+/* 457 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89152,15 +89283,15 @@ module.exports = SunCalc;
 
 
 
-    __webpack_require__(519);
-    __webpack_require__(520);
-    __webpack_require__(455);
+    __webpack_require__(522);
+    __webpack_require__(523);
+    __webpack_require__(458);
 
 
 
 
 /***/ }),
-/* 455 */
+/* 458 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -89664,7 +89795,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 456 */
+/* 459 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -89677,11 +89808,11 @@ module.exports = SunCalc;
     __webpack_require__(67);
     __webpack_require__(68);
 
-    __webpack_require__(462);
-    __webpack_require__(463);
+    __webpack_require__(465);
+    __webpack_require__(466);
 
-    __webpack_require__(458);
-    __webpack_require__(459);
+    __webpack_require__(461);
+    __webpack_require__(462);
 
     __webpack_require__(167);
     __webpack_require__(166);
@@ -89689,7 +89820,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 457 */
+/* 460 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -90162,7 +90293,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 458 */
+/* 461 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -90188,7 +90319,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 459 */
+/* 462 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -90196,7 +90327,7 @@ module.exports = SunCalc;
     var DataZoomView = __webpack_require__(68);
     var zrUtil = __webpack_require__(0);
     var sliderMove = __webpack_require__(70);
-    var roams = __webpack_require__(464);
+    var roams = __webpack_require__(467);
     var bind = zrUtil.bind;
 
     var InsideZoomView = DataZoomView.extend({
@@ -90414,7 +90545,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 460 */
+/* 463 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -90433,7 +90564,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 461 */
+/* 464 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -90447,7 +90578,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 462 */
+/* 465 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -90526,7 +90657,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 463 */
+/* 466 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -91333,7 +91464,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 464 */
+/* 467 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -91533,7 +91664,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 465 */
+/* 468 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -91546,8 +91677,8 @@ module.exports = SunCalc;
     __webpack_require__(67);
     __webpack_require__(68);
 
-    __webpack_require__(460);
-    __webpack_require__(461);
+    __webpack_require__(463);
+    __webpack_require__(464);
 
     __webpack_require__(167);
     __webpack_require__(166);
@@ -91555,16 +91686,16 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 466 */
+/* 469 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
-    __webpack_require__(527);
+    __webpack_require__(530);
 
     __webpack_require__(88);
 
-    __webpack_require__(467);
+    __webpack_require__(470);
 
     __webpack_require__(149);
 
@@ -91609,7 +91740,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 467 */
+/* 470 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -91656,7 +91787,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 468 */
+/* 471 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -92164,7 +92295,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 469 */
+/* 472 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -92178,7 +92309,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 470 */
+/* 473 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -92186,17 +92317,17 @@ module.exports = SunCalc;
  */
 
 
-    __webpack_require__(471);
-    __webpack_require__(473);
-    __webpack_require__(472);
+    __webpack_require__(474);
+    __webpack_require__(476);
+    __webpack_require__(475);
 
     var echarts = __webpack_require__(1);
     // Series Filter
-    echarts.registerProcessor(__webpack_require__(474));
+    echarts.registerProcessor(__webpack_require__(477));
 
 
 /***/ }),
-/* 471 */
+/* 474 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -92394,7 +92525,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 472 */
+/* 475 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -92664,7 +92795,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 473 */
+/* 476 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -92751,7 +92882,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 474 */
+/* 477 */
 /***/ (function(module, exports) {
 
 
@@ -92775,13 +92906,13 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 475 */
+/* 478 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
-    __webpack_require__(478);
-    __webpack_require__(479);
+    __webpack_require__(481);
+    __webpack_require__(482);
 
     __webpack_require__(1).registerPreprocessor(function (opt) {
         // Make sure markArea component is enabled
@@ -92790,13 +92921,13 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 476 */
+/* 479 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
-    __webpack_require__(480);
-    __webpack_require__(481);
+    __webpack_require__(483);
+    __webpack_require__(484);
 
     __webpack_require__(1).registerPreprocessor(function (opt) {
         // Make sure markLine component is enabled
@@ -92805,14 +92936,14 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 477 */
+/* 480 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // HINT Markpoint can't be used too much
 
 
-    __webpack_require__(482);
-    __webpack_require__(483);
+    __webpack_require__(485);
+    __webpack_require__(486);
 
     __webpack_require__(1).registerPreprocessor(function (opt) {
         // Make sure markPoint component is enabled
@@ -92821,7 +92952,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 478 */
+/* 481 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -92862,7 +92993,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 479 */
+/* 482 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // TODO Better on polar
@@ -93181,7 +93312,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 480 */
+/* 483 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -93226,7 +93357,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 481 */
+/* 484 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -93584,7 +93715,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 482 */
+/* 485 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -93622,7 +93753,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 483 */
+/* 486 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -93781,19 +93912,19 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 484 */
+/* 487 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     __webpack_require__(193);
+    __webpack_require__(444);
     __webpack_require__(441);
-    __webpack_require__(438);
 
 
 
 /***/ }),
-/* 485 */
+/* 488 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -93803,14 +93934,14 @@ module.exports = SunCalc;
     var zrUtil = __webpack_require__(0);
 
     __webpack_require__(119);
-    __webpack_require__(434);
-    __webpack_require__(488);
+    __webpack_require__(437);
+    __webpack_require__(491);
     __webpack_require__(66);
 
-    __webpack_require__(444);
+    __webpack_require__(447);
 
     // For reducing size of echarts.min, barLayoutPolar is required by polar.
-    __webpack_require__(1).registerLayout(zrUtil.curry(__webpack_require__(551), 'bar'));
+    __webpack_require__(1).registerLayout(zrUtil.curry(__webpack_require__(554), 'bar'));
 
     // Polar view
     __webpack_require__(1).extendComponentView({
@@ -93819,19 +93950,19 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 486 */
+/* 489 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
-    __webpack_require__(542);
-    __webpack_require__(543);
+    __webpack_require__(545);
+    __webpack_require__(546);
 
-    __webpack_require__(487);
+    __webpack_require__(490);
 
 
 /***/ }),
-/* 487 */
+/* 490 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -94011,18 +94142,18 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 488 */
+/* 491 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     __webpack_require__(119);
 
-    __webpack_require__(439);
+    __webpack_require__(442);
 
 
 /***/ }),
-/* 489 */
+/* 492 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -94032,17 +94163,17 @@ module.exports = SunCalc;
 
     var echarts = __webpack_require__(1);
 
-    echarts.registerPreprocessor(__webpack_require__(495));
+    echarts.registerPreprocessor(__webpack_require__(498));
 
-    __webpack_require__(497);
-    __webpack_require__(496);
-    __webpack_require__(490);
-    __webpack_require__(491);
+    __webpack_require__(500);
+    __webpack_require__(499);
+    __webpack_require__(493);
+    __webpack_require__(494);
 
 
 
 /***/ }),
-/* 490 */
+/* 493 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -94050,7 +94181,7 @@ module.exports = SunCalc;
  */
 
 
-    var TimelineModel = __webpack_require__(493);
+    var TimelineModel = __webpack_require__(496);
     var zrUtil = __webpack_require__(0);
     var modelUtil = __webpack_require__(5);
 
@@ -94158,7 +94289,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 491 */
+/* 494 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -94169,8 +94300,8 @@ module.exports = SunCalc;
     var zrUtil = __webpack_require__(0);
     var graphic = __webpack_require__(2);
     var layout = __webpack_require__(6);
-    var TimelineView = __webpack_require__(494);
-    var TimelineAxis = __webpack_require__(492);
+    var TimelineView = __webpack_require__(497);
+    var TimelineAxis = __webpack_require__(495);
     var symbolUtil = __webpack_require__(27);
     var axisHelper = __webpack_require__(25);
     var BoundingRect = __webpack_require__(12);
@@ -94876,7 +95007,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 492 */
+/* 495 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -94977,7 +95108,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 493 */
+/* 496 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -95179,7 +95310,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 494 */
+/* 497 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -95199,7 +95330,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 495 */
+/* 498 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -95290,7 +95421,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 496 */
+/* 499 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -95340,7 +95471,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 497 */
+/* 500 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -95353,7 +95484,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 498 */
+/* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -95568,23 +95699,23 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 499 */
+/* 502 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
-    __webpack_require__(500);
-    __webpack_require__(501);
-
-    __webpack_require__(507);
-    __webpack_require__(505);
     __webpack_require__(503);
     __webpack_require__(504);
+
+    __webpack_require__(510);
+    __webpack_require__(508);
     __webpack_require__(506);
+    __webpack_require__(507);
+    __webpack_require__(509);
 
 
 /***/ }),
-/* 500 */
+/* 503 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -95660,7 +95791,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 501 */
+/* 504 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -95914,7 +96045,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 502 */
+/* 505 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -96047,7 +96178,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 503 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -96530,7 +96661,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 504 */
+/* 507 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -96546,7 +96677,7 @@ module.exports = SunCalc;
     var each = zrUtil.each;
 
     // Use dataZoomSelect
-    __webpack_require__(465);
+    __webpack_require__(468);
 
     // Spectial component id start with \0ec\0, see echarts/model/Global.js~hasInnerId
     var DATA_ZOOM_ID_BASE = '\0_ec_\0toolbox-dataZoom_';
@@ -96840,7 +96971,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 505 */
+/* 508 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -97021,7 +97152,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 506 */
+/* 509 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -97066,7 +97197,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 507 */
+/* 510 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -97138,7 +97269,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 508 */
+/* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // FIXME Better way to pack data in graphic element
@@ -97146,9 +97277,9 @@ module.exports = SunCalc;
 
     __webpack_require__(66);
 
-    __webpack_require__(510);
+    __webpack_require__(513);
 
-    __webpack_require__(511);
+    __webpack_require__(514);
 
 
     // Show tip action
@@ -97182,7 +97313,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 509 */
+/* 512 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -97448,7 +97579,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 510 */
+/* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -97558,12 +97689,12 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 511 */
+/* 514 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
-    var TooltipContent = __webpack_require__(509);
+    var TooltipContent = __webpack_require__(512);
     var zrUtil = __webpack_require__(0);
     var formatUtil = __webpack_require__(8);
     var numberUtil = __webpack_require__(3);
@@ -98334,7 +98465,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 512 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -98342,13 +98473,13 @@ module.exports = SunCalc;
  */
 
 
-    __webpack_require__(517);
-    __webpack_require__(518);
+    __webpack_require__(520);
+    __webpack_require__(521);
 
 
 
 /***/ }),
-/* 513 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -98602,7 +98733,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 514 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -99452,7 +99583,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 515 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -99985,7 +100116,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 516 */
+/* 519 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -100213,7 +100344,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 517 */
+/* 520 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -100227,35 +100358,35 @@ module.exports = SunCalc;
 
     __webpack_require__(182);
     __webpack_require__(183);
-    __webpack_require__(513);
-    __webpack_require__(514);
-    __webpack_require__(184);
-
-
-
-/***/ }),
-/* 518 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * DataZoom component entry
- */
-
-
-    __webpack_require__(1).registerPreprocessor(
-        __webpack_require__(181)
-    );
-
-    __webpack_require__(182);
-    __webpack_require__(183);
-    __webpack_require__(515);
     __webpack_require__(516);
+    __webpack_require__(517);
     __webpack_require__(184);
 
 
 
 /***/ }),
-/* 519 */
+/* 521 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * DataZoom component entry
+ */
+
+
+    __webpack_require__(1).registerPreprocessor(
+        __webpack_require__(181)
+    );
+
+    __webpack_require__(182);
+    __webpack_require__(183);
+    __webpack_require__(518);
+    __webpack_require__(519);
+    __webpack_require__(184);
+
+
+
+/***/ }),
+/* 522 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100680,7 +100811,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 520 */
+/* 523 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100835,7 +100966,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 521 */
+/* 524 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -100872,7 +101003,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 522 */
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -101002,7 +101133,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 523 */
+/* 526 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101120,7 +101251,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 524 */
+/* 527 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101166,7 +101297,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 525 */
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -101208,7 +101339,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 526 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -101224,7 +101355,7 @@ module.exports = SunCalc;
 
     // Geo fix functions
     var geoFixFuncs = [
-        __webpack_require__(528),
+        __webpack_require__(531),
         __webpack_require__(191),
         __webpack_require__(190)
     ];
@@ -101469,7 +101600,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 527 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -101643,7 +101774,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 528 */
+/* 531 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Fix for 南海诸岛
@@ -101695,7 +101826,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 529 */
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -101737,7 +101868,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 530 */
+/* 533 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -101864,7 +101995,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 531 */
+/* 534 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -101876,7 +102007,7 @@ module.exports = SunCalc;
     var layoutUtil = __webpack_require__(6);
     var axisHelper = __webpack_require__(25);
     var zrUtil = __webpack_require__(0);
-    var ParallelAxis = __webpack_require__(532);
+    var ParallelAxis = __webpack_require__(535);
     var graphic = __webpack_require__(2);
     var matrix = __webpack_require__(29);
     var numberUtil = __webpack_require__(3);
@@ -102385,7 +102516,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 532 */
+/* 535 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -102440,7 +102571,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 533 */
+/* 536 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -102448,7 +102579,7 @@ module.exports = SunCalc;
     var zrUtil = __webpack_require__(0);
     var Component = __webpack_require__(14);
 
-    __webpack_require__(530);
+    __webpack_require__(533);
 
     Component.extend({
 
@@ -102572,7 +102703,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 534 */
+/* 537 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -102631,7 +102762,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 535 */
+/* 538 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102680,7 +102811,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 536 */
+/* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102749,7 +102880,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 537 */
+/* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -102759,8 +102890,8 @@ module.exports = SunCalc;
  */
 
 
-    var RadiusAxis = __webpack_require__(539);
-    var AngleAxis = __webpack_require__(535);
+    var RadiusAxis = __webpack_require__(542);
+    var AngleAxis = __webpack_require__(538);
 
     /**
      * @alias {module:echarts/coord/polar/Polar}
@@ -103013,14 +103144,14 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 538 */
+/* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 
-    __webpack_require__(536);
+    __webpack_require__(539);
 
     __webpack_require__(1).extendComponentModel({
 
@@ -103063,7 +103194,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 539 */
+/* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -103110,7 +103241,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 540 */
+/* 543 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -103169,7 +103300,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 541 */
+/* 544 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -103209,14 +103340,14 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 542 */
+/* 545 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // TODO clockwise
 
 
     var zrUtil = __webpack_require__(0);
-    var IndicatorAxis = __webpack_require__(541);
+    var IndicatorAxis = __webpack_require__(544);
     var IntervalScale = __webpack_require__(90);
     var numberUtil = __webpack_require__(3);
     var axisHelper = __webpack_require__(25);
@@ -103448,7 +103579,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 543 */
+/* 546 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -103588,7 +103719,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 544 */
+/* 547 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -103684,7 +103815,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 545 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -103692,7 +103823,7 @@ module.exports = SunCalc;
  */
 
 
-    var SingleAxis = __webpack_require__(546);
+    var SingleAxis = __webpack_require__(549);
     var axisHelper = __webpack_require__(25);
     var layout = __webpack_require__(6);
 
@@ -103964,7 +104095,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 546 */
+/* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -104070,7 +104201,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 547 */
+/* 550 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -104109,7 +104240,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 548 */
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -104117,7 +104248,7 @@ module.exports = SunCalc;
  */
 
 
-    var Single = __webpack_require__(545);
+    var Single = __webpack_require__(548);
 
     /**
      * Create single coordinate system and inject it into seriesModel.
@@ -104160,7 +104291,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 549 */
+/* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -104641,7 +104772,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 550 */
+/* 553 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -104719,7 +104850,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 551 */
+/* 554 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -105012,7 +105143,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 552 */
+/* 555 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -105115,7 +105246,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 553 */
+/* 556 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -105151,7 +105282,7 @@ module.exports = SunCalc;
 
     var ComponentModel = __webpack_require__(14);
 
-    var globalDefault = __webpack_require__(555);
+    var globalDefault = __webpack_require__(558);
 
     var OPTION_INNER_KEY = '\0_ec_inner';
 
@@ -105836,7 +105967,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 554 */
+/* 557 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -106276,7 +106407,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 555 */
+/* 558 */
 /***/ (function(module, exports) {
 
 
@@ -106340,7 +106471,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 556 */
+/* 559 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -106359,7 +106490,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 557 */
+/* 560 */
 /***/ (function(module, exports) {
 
 
@@ -106379,7 +106510,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 558 */
+/* 561 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -106414,7 +106545,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 559 */
+/* 562 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -106451,7 +106582,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 560 */
+/* 563 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -106501,14 +106632,14 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 561 */
+/* 564 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Compatitable with 2.0
 
 
     var zrUtil = __webpack_require__(0);
-    var compatStyle = __webpack_require__(562);
+    var compatStyle = __webpack_require__(565);
 
     function get(opt, path) {
         path = path.split(',');
@@ -106611,7 +106742,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 562 */
+/* 565 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -106692,7 +106823,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 563 */
+/* 566 */
 /***/ (function(module, exports) {
 
 
@@ -106775,7 +106906,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 564 */
+/* 567 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -106969,7 +107100,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 565 */
+/* 568 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -107076,7 +107207,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 566 */
+/* 569 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -107264,7 +107395,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 567 */
+/* 570 */
 /***/ (function(module, exports, __webpack_require__) {
 
  
@@ -107370,7 +107501,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 568 */
+/* 571 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -107410,7 +107541,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 569 */
+/* 572 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -107763,7 +107894,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 570 */
+/* 573 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108136,7 +108267,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 571 */
+/* 574 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108286,7 +108417,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 572 */
+/* 575 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108392,7 +108523,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 573 */
+/* 576 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108433,7 +108564,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 574 */
+/* 577 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108549,7 +108680,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 575 */
+/* 578 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108592,7 +108723,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 576 */
+/* 579 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108601,7 +108732,7 @@ module.exports = SunCalc;
 
 
     var Light = __webpack_require__(43);
-    var cubemapUtil = __webpack_require__(603);
+    var cubemapUtil = __webpack_require__(606);
 
     /**
      * @constructor qtek.light.AmbientCubemap
@@ -108685,7 +108816,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 577 */
+/* 580 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108750,7 +108881,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 578 */
+/* 581 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -108762,9 +108893,9 @@ module.exports = SunCalc;
     var util = __webpack_require__(58);
     var Compositor = __webpack_require__(201);
     var CompoNode = __webpack_require__(76);
-    var CompoSceneNode = __webpack_require__(572);
-    var CompoTextureNode = __webpack_require__(573);
-    var CompoFilterNode = __webpack_require__(570);
+    var CompoSceneNode = __webpack_require__(575);
+    var CompoTextureNode = __webpack_require__(576);
+    var CompoFilterNode = __webpack_require__(573);
     var Shader = __webpack_require__(22);
     var Texture = __webpack_require__(18);
     var Texture2D = __webpack_require__(19);
@@ -109151,7 +109282,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 579 */
+/* 582 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109447,7 +109578,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 580 */
+/* 583 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -109725,7 +109856,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 581 */
+/* 584 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -110130,7 +110261,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 582 */
+/* 585 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -110858,7 +110989,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 583 */
+/* 586 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -111075,7 +111206,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 584 */
+/* 587 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -111111,7 +111242,7 @@ module.exports = SunCalc;
 
     var targets = ['px', 'nx', 'py', 'ny', 'pz', 'nz'];
 
-    Shader['import'](__webpack_require__(600));
+    Shader['import'](__webpack_require__(603));
 
     /**
      * Pass rendering shadow map.
@@ -111949,7 +112080,7 @@ module.exports = SunCalc;
 
 
 /***/ }),
-/* 585 */
+/* 588 */
 /***/ (function(module, exports) {
 
 
@@ -111957,7 +112088,7 @@ module.exports = "@export qtek.basic.vertex\n\nuniform mat4 worldViewProjection 
 
 
 /***/ }),
-/* 586 */
+/* 589 */
 /***/ (function(module, exports) {
 
 
@@ -111965,7 +112096,7 @@ module.exports = "@export qtek.compositor.blend\n#ifdef TEXTURE1_ENABLED\nunifor
 
 
 /***/ }),
-/* 587 */
+/* 590 */
 /***/ (function(module, exports) {
 
 
@@ -111973,7 +112104,7 @@ module.exports = "@export qtek.compositor.kernel.gaussian_9\nfloat gaussianKerne
 
 
 /***/ }),
-/* 588 */
+/* 591 */
 /***/ (function(module, exports) {
 
 
@@ -111981,7 +112112,7 @@ module.exports = "@export qtek.compositor.bright\n\nuniform sampler2D texture;\n
 
 
 /***/ }),
-/* 589 */
+/* 592 */
 /***/ (function(module, exports) {
 
 
@@ -111989,7 +112120,7 @@ module.exports = "@export qtek.compositor.dof.coc\n\nuniform sampler2D depth;\n\
 
 
 /***/ }),
-/* 590 */
+/* 593 */
 /***/ (function(module, exports) {
 
 
@@ -111997,7 +112128,7 @@ module.exports = "@export qtek.compositor.downsample\n\nuniform sampler2D textur
 
 
 /***/ }),
-/* 591 */
+/* 594 */
 /***/ (function(module, exports) {
 
 
@@ -112005,7 +112136,7 @@ module.exports = "@export qtek.compositor.fxaa\n\nuniform sampler2D texture;\nun
 
 
 /***/ }),
-/* 592 */
+/* 595 */
 /***/ (function(module, exports) {
 
 
@@ -112013,7 +112144,7 @@ module.exports = "@export qtek.compositor.hdr.composite\n\nuniform sampler2D tex
 
 
 /***/ }),
-/* 593 */
+/* 596 */
 /***/ (function(module, exports) {
 
 
@@ -112021,7 +112152,7 @@ module.exports = "@export qtek.compositor.lensflare\n\n#define SAMPLE_NUMBER 8\n
 
 
 /***/ }),
-/* 594 */
+/* 597 */
 /***/ (function(module, exports) {
 
 
@@ -112029,7 +112160,7 @@ module.exports = "\n@export qtek.compositor.lut\n\nvarying vec2 v_Texcoord;\n\nu
 
 
 /***/ }),
-/* 595 */
+/* 598 */
 /***/ (function(module, exports) {
 
 
@@ -112037,7 +112168,7 @@ module.exports = "@export qtek.compositor.output\n\n#define OUTPUT_ALPHA\n\nvary
 
 
 /***/ }),
-/* 596 */
+/* 599 */
 /***/ (function(module, exports) {
 
 
@@ -112045,7 +112176,7 @@ module.exports = "\n@export qtek.compositor.upsample\n\n#define HIGH_QUALITY\n\n
 
 
 /***/ }),
-/* 597 */
+/* 600 */
 /***/ (function(module, exports) {
 
 
@@ -112053,7 +112184,7 @@ module.exports = "\n@export qtek.compositor.vertex\n\nuniform mat4 worldViewProj
 
 
 /***/ }),
-/* 598 */
+/* 601 */
 /***/ (function(module, exports) {
 
 
@@ -112061,7 +112192,7 @@ module.exports = "vec3 calcAmbientSHLight(int idx, vec3 N) {\n    int offset = 9
 
 
 /***/ }),
-/* 599 */
+/* 602 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -112083,7 +112214,7 @@ module.exports = "vec3 calcAmbientSHLight(int idx, vec3 N) {\n    int offset = 9
         exportHeaderPrefix + 'ambient_sh_light',
         uniformVec3Prefix + 'ambientSHLightColor[AMBIENT_SH_LIGHT_COUNT]' + unconfigurable,
         uniformVec3Prefix + 'ambientSHLightCoefficients[AMBIENT_SH_LIGHT_COUNT * 9]' + unconfigurable,
-        __webpack_require__(598),
+        __webpack_require__(601),
         exportEnd,
 
         exportHeaderPrefix + 'ambient_cubemap_light',
@@ -112111,7 +112242,7 @@ module.exports = "vec3 calcAmbientSHLight(int idx, vec3 N) {\n    int offset = 9
 
 
 /***/ }),
-/* 600 */
+/* 603 */
 /***/ (function(module, exports) {
 
 
@@ -112119,7 +112250,7 @@ module.exports = "@export qtek.sm.depth.vertex\n\nuniform mat4 worldViewProjecti
 
 
 /***/ }),
-/* 601 */
+/* 604 */
 /***/ (function(module, exports) {
 
 
@@ -112127,7 +112258,7 @@ module.exports = "@export qtek.skybox.vertex\n\nuniform mat4 world : WORLD;\nuni
 
 
 /***/ }),
-/* 602 */
+/* 605 */
 /***/ (function(module, exports) {
 
 
@@ -112135,7 +112266,7 @@ module.exports = "\n@export qtek.util.rand\nhighp float rand(vec2 uv) {\n    con
 
 
 /***/ }),
-/* 603 */
+/* 606 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Cubemap prefilter utility
@@ -112156,8 +112287,8 @@ module.exports = "\n@export qtek.util.rand\nhighp float rand(vec2 uv) {\n    con
     var vendor = __webpack_require__(46);
     var textureUtil = __webpack_require__(96);
 
-    var integrateBRDFShaderCode = __webpack_require__(607);
-    var prefilterFragCode = __webpack_require__(608);
+    var integrateBRDFShaderCode = __webpack_require__(610);
+    var prefilterFragCode = __webpack_require__(611);
 
     var cubemapUtil = {};
 
@@ -112411,7 +112542,7 @@ module.exports = "\n@export qtek.util.rand\nhighp float rand(vec2 uv) {\n    con
 
 
 /***/ }),
-/* 604 */
+/* 607 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -112577,7 +112708,7 @@ module.exports = "\n@export qtek.util.rand\nhighp float rand(vec2 uv) {\n    con
 
 
 /***/ }),
-/* 605 */
+/* 608 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -112764,7 +112895,7 @@ module.exports = "\n@export qtek.util.rand\nhighp float rand(vec2 uv) {\n    con
 
 
 /***/ }),
-/* 606 */
+/* 609 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Spherical Harmonic Helpers
@@ -112786,7 +112917,7 @@ module.exports = "\n@export qtek.util.rand\nhighp float rand(vec2 uv) {\n    con
     var sh = {};
 
 
-    var projectEnvMapShaderCode = __webpack_require__(609);
+    var projectEnvMapShaderCode = __webpack_require__(612);
 
     var targets = ['px', 'nx', 'py', 'ny', 'pz', 'nz'];
 
@@ -112992,7 +113123,7 @@ module.exports = "\n@export qtek.util.rand\nhighp float rand(vec2 uv) {\n    con
 
 
 /***/ }),
-/* 607 */
+/* 610 */
 /***/ (function(module, exports) {
 
 
@@ -113000,7 +113131,7 @@ module.exports = "#define SAMPLE_NUMBER 1024\n#define PI 3.14159265358979\n\n\nu
 
 
 /***/ }),
-/* 608 */
+/* 611 */
 /***/ (function(module, exports) {
 
 
@@ -113008,7 +113139,7 @@ module.exports = "#define SAMPLE_NUMBER 1024\n#define PI 3.14159265358979\n\nuni
 
 
 /***/ }),
-/* 609 */
+/* 612 */
 /***/ (function(module, exports) {
 
 
@@ -113016,7 +113147,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 610 */
+/* 613 */
 /***/ (function(module, exports) {
 
 
@@ -113024,7 +113155,461 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 611 */
+/* 614 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(selector) {
+		if (typeof memo[selector] === "undefined") {
+			memo[selector] = fn.call(this, selector);
+		}
+
+		return memo[selector]
+	};
+})(function (target) {
+	return document.querySelector(target)
+});
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(615);
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton) options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+	if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else {
+		throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
+	}
+}
+
+function removeStyleElement (style) {
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	options.attrs.type = "text/css";
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	options.attrs.type = "text/css";
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = options.transform(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+/* 615 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+/* 616 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -113039,7 +113624,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
     var util = __webpack_require__(0);
-    var Draggable = __webpack_require__(638);
+    var Draggable = __webpack_require__(643);
 
     var Eventful = __webpack_require__(54);
 
@@ -113350,7 +113935,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 612 */
+/* 617 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -113585,7 +114170,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 613 */
+/* 618 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -113605,7 +114190,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
     var BoundingRect = __webpack_require__(12);
     var timsort = __webpack_require__(137);
 
-    var Layer = __webpack_require__(612);
+    var Layer = __webpack_require__(617);
 
     var requestAnimationFrame = __webpack_require__(216);
 
@@ -114703,7 +115288,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 614 */
+/* 619 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -114962,7 +115547,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 615 */
+/* 620 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -115223,7 +115808,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 616 */
+/* 621 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -115242,7 +115827,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
  */
 
 
-    var easingFuncs = __webpack_require__(617);
+    var easingFuncs = __webpack_require__(622);
 
     function Clip(options) {
 
@@ -115352,7 +115937,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 617 */
+/* 622 */
 /***/ (function(module, exports) {
 
 /**
@@ -115703,7 +116288,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 618 */
+/* 623 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -115769,7 +116354,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 619 */
+/* 624 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -115816,7 +116401,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 620 */
+/* 625 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -115825,9 +116410,9 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
     var CMD = __webpack_require__(60).CMD;
     var line = __webpack_require__(217);
-    var cubic = __webpack_require__(619);
+    var cubic = __webpack_require__(624);
     var quadratic = __webpack_require__(219);
-    var arc = __webpack_require__(618);
+    var arc = __webpack_require__(623);
     var normalizeRadian = __webpack_require__(220).normalizeRadian;
     var curve = __webpack_require__(47);
 
@@ -116223,7 +116808,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 621 */
+/* 626 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -116350,7 +116935,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 622 */
+/* 627 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -116359,7 +116944,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
     var zrUtil = __webpack_require__(0);
     var Eventful = __webpack_require__(54);
     var env = __webpack_require__(15);
-    var GestureMgr = __webpack_require__(621);
+    var GestureMgr = __webpack_require__(626);
 
     var addEventListener = eventTool.addEventListener;
     var removeEventListener = eventTool.removeEventListener;
@@ -116734,7 +117319,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 623 */
+/* 628 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // CompoundPath to improve performance
@@ -116797,7 +117382,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 624 */
+/* 629 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -116847,7 +117432,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 625 */
+/* 630 */
 /***/ (function(module, exports) {
 
 
@@ -116942,7 +117527,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 626 */
+/* 631 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -117049,7 +117634,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 627 */
+/* 632 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -117125,7 +117710,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 628 */
+/* 633 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -117179,7 +117764,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 629 */
+/* 634 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -117321,7 +117906,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 630 */
+/* 635 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -117364,7 +117949,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 631 */
+/* 636 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -117429,7 +118014,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 632 */
+/* 637 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -117459,7 +118044,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 633 */
+/* 638 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -117494,7 +118079,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 634 */
+/* 639 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -117503,7 +118088,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
  */
 
 
-    var roundRectHelper = __webpack_require__(625);
+    var roundRectHelper = __webpack_require__(630);
 
     module.exports = __webpack_require__(21).extend({
 
@@ -117542,7 +118127,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 635 */
+/* 640 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -117576,7 +118161,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 636 */
+/* 641 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -117695,7 +118280,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 637 */
+/* 642 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -117970,7 +118555,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 638 */
+/* 643 */
 /***/ (function(module, exports) {
 
 // TODO Draggable for group
@@ -118062,14 +118647,14 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 639 */
+/* 644 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 
     var Path = __webpack_require__(21);
     var PathProxy = __webpack_require__(60);
-    var transformPath = __webpack_require__(640);
+    var transformPath = __webpack_require__(645);
 
     // command chars
     var cc = [
@@ -118476,7 +119061,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 640 */
+/* 645 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -118579,7 +119164,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 641 */
+/* 646 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -118776,7 +119361,7 @@ module.exports = "uniform samplerCube environmentMap;\n\nvarying vec2 v_Texcoord
 
 
 /***/ }),
-/* 642 */
+/* 647 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // http://www.w3.org/TR/NOTE-VML
@@ -119837,12 +120422,12 @@ if (!__webpack_require__(15).canvasSupported) {
 
 
 /***/ }),
-/* 643 */
+/* 648 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    __webpack_require__(642);
-    __webpack_require__(231).registerPainter('vml', __webpack_require__(641));
+    __webpack_require__(647);
+    __webpack_require__(231).registerPainter('vml', __webpack_require__(646));
 
 
 /***/ })

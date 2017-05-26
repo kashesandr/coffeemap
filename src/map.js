@@ -1,5 +1,6 @@
 import echarts from "echarts";
 import echartsGl from "echarts-gl";
+import normalizeCss from "normalize.css";
 
 function pageHeight() {
     return window.innerHeight != null? window.innerHeight: document.body != null? document.body.clientHeight:null;
