@@ -1,18 +1,61 @@
+import echarts from "echarts";
+import echartsGl from "echarts-gl";
 
-let map = L.map('map').setView([51.505, -0.09], 2);
+function pageHeight() {
+    return window.innerHeight != null? window.innerHeight: document.body != null? document.body.clientHeight:null;
+}
+function pageWidth() {
+    return window.innerWidth != null? window.innerWidth: document.body != null? document.body.clientWidth:null;
+}
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
-    maxZoom: 18,
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-    '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-    'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    id: 'mapbox.streets'
-}).addTo(map);
+function addEvent(object, type, callback) {
+    if (object == null || typeof(object) == 'undefined') return;
+    if (object.addEventListener) {
+        object.addEventListener(type, callback, false);
+    } else if (object.attachEvent) {
+        object.attachEvent("on" + type, callback);
+    } else {
+        object["on"+type] = callback;
+    }
+}
 
-let points = new Set();
+let option = {
+    backgroundColor: '#000',
+    globe: {
+        baseTexture: '/src/baseTexture.jpg',
+        heightTexture: '/src/heightTexture.jpg',
 
-points.add({coord: [0.7893, 113.9213]});
+        displacementScale: 0.1,
 
-points.forEach(
-    item => L.marker(item.coord).addTo(map).bindPopup("Here is coffee!")
-);
+        shading: 'lambert',
+
+        environment: '/src/environmentTexture.jpg',
+
+        light: {
+            ambient: {
+                intensity: 0.8
+            },
+            main: {
+                intensity: 0.8
+            }
+        },
+
+        layers: []
+    },
+    series: []
+};
+
+let element = document.getElementById('chart');
+function updateChartSize(el) {
+    el.style.height = pageHeight()+'px';
+    el.style.width = pageWidth()+'px';
+}
+updateChartSize(element);
+
+addEvent(window, 'resize', function () {
+    updateChartSize(element);
+    chart.resize();
+});
+
+let chart = echarts.init(element);
+chart.setOption(option);
